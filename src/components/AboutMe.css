@@ -1,0 +1,115 @@
+/* AboutMe.css */
+
+/* Styles for both light and dark modes */
+.about-me {
+  min-height: 100vh; /* Ensure the container fills the viewport */
+  width: auto;
+  padding: 20px;
+  height: auto; /* Ensure the container fills its content vertically */
+  text-align: left;
+}
+
+.about-me h2 {
+  font-size: 3rem;
+  color: rgb(95, 162, 255);
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #000000; /* Default text color */
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+/* Dark mode styles */
+.about-me.dark-mode {
+  background-color: #e0e0e0; /* Dark mode background color */
+}
+
+.about-me.dark-mode p {
+  color: #000000; /* Dark mode paragraph text color */
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute space between buttons */
+  width: 100%;
+  height: auto;
+  margin-bottom: 1%; /* Increase margin between button groups */
+  transition: transform 1s ease; /* Add transition effect */
+  transform: translateY(500%); /* Initial position */
+}
+
+.button-group.show {
+  transform: translateY(0%); /* Slide buttons upwards */
+}
+
+.button-group button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffbf00a0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 15px 30px; /* Increase button padding */
+  margin: 0.5%;
+  border-radius: 10px; /* Increase button border radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1; /* Each button takes equal space */
+  min-width: 150px; /* Set a minimum width for each button */
+  font-size: 20px;
+}
+
+.button-group button img {
+  max-width: 50px; /* Adjust max-width of the logo */
+  margin-right: 10px; /* Add margin to separate logo and text */
+}
+
+.button-group button:hover {
+  background-color: #ffa600; /* Button background color on hover */
+}
+
+/* Increase space between buttons */
+.button-group + .button-group {
+  margin-top: 20px;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 800px) {
+  .about-me {
+    padding: 40px 0; /* Adjust padding for smaller screens */
+    height: auto; /* Let height adjust to content on smaller screens */
+  }
+
+  .about-me h2 {
+    font-size: 4vw; /* Adjust heading font size for smaller screens */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .about-me p {
+    font-size: 2.5vw; /* Adjust paragraph font size for smaller screens */
+    margin-bottom: 10px;
+  }
+
+  .button-group {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+
+  .button-group button {
+    font-size: 10px;
+    margin: 2%;
+  }
+  
+  .button-group button img {
+    max-width: 20px; /* Adjust max-width of the logo */
+    margin-right: 10px; /* Add margin to separate logo and text */
+  }
+}

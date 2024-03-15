@@ -1,0 +1,83 @@
+/* Header.css */
+
+/* Header container styles */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff; /* Light mode background color */
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #000000; /* Dark mode background color */
+}
+
+/* ToggleButton styles */
+.toggle-button {
+  /* Move the button to the right */
+
+  /* Add transition for smooth size change */
+  transition: transform 0.3s ease;
+}
+
+/* Expand the button when hovered over */
+.toggle-button:hover {
+  transform: scale(1.2); /* Increase size by 20% */
+}
+
+.section-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+
+.section-button {
+  margin-left: 10px;
+  padding: 15px 15px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.section-button.active {
+  background-color: #6bb3ff; /* Highlight color for active button */
+  color: white; /* Text color for active button */
+  transition: background-color 0.3s ease, color 0.1s ease;
+}
+
+.section-button:hover {
+  color: #ffffff;
+  background-color: #6bb3ff;
+}
+
+.header-container.dark-mode .section-button {
+  color: #ffffff; /* Modify color for dark mode */
+}
+
+.header-container.dark-mode .section-button:hover {
+  background-color: #7d7d7e;
+}
+
+.header-container.dark-mode .section-button.active {
+  background-color: rgb(140, 140, 140); /* Modify color for dark mode */
+  transition: background-color 0.3s ease, color 0.1s ease;
+}
+
+/* Media query for adjusting toggle button font size */
+@media screen and (max-width: 768px) {
+  .toggle-button {
+    font-size: 2vw; /* Adjust font size based on viewport width */
+  }
+  .section-buttons {
+    display: none;
+  }
+}

@@ -1,0 +1,141 @@
+/* Footer container styles */
+.footer {
+  height: auto;
+  padding: 0%;
+  font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Light mode styles */
+.light-mode .footer {
+  background-color: #f1f1f1ec;
+  color: #000;
+}
+
+/* Dark mode styles */
+.dark-mode .footer {
+  background-color: #8e8e8e;
+  color: #fff;
+}
+
+/* Contact form and info container */
+.contact-and-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Contact form styles */
+.contact-form {
+  width: 45%; /* Adjust width as needed */
+}
+
+.contact-form h3 {
+  font-size: 35px;
+  margin: 1%;
+  padding: 1%;
+}
+
+.contact-form h2 {
+  font-size: 15px;
+  font-weight: lighter;
+  margin: auto;
+  padding: 1%;
+  margin-left: 1.5%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 3%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.contact-form button {
+  padding: 4%;
+  background-color: #8ebcec;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.contact-form button:hover {
+  background-color: #007bff;
+}
+
+/* Info section styles */
+.info-section {
+  width: 45%; /* Adjust width as needed */
+}
+
+.info-section > div {
+  margin-bottom: 10px;
+}
+
+.info-section h3 {
+  font-size: 35px;
+  margin: 1%;
+  padding: 1%;
+}
+
+.info-section p {
+  font-size: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-buttons a {
+  margin: 0 5px;
+}
+
+.social-buttons img {
+  width: 40px; /* Adjust size as needed */
+}
+
+.footer p {
+  font-size: medium;
+  font-weight: lighter;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-form textarea.message {
+  height: 10rem; /* Adjust the height value as needed */
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-and-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form h3 {
+    font-size: 20px;
+  }
+
+  .info-section h3 {
+    font-size: 20px;
+  }
+
+  .contact-form,
+  .info-section {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

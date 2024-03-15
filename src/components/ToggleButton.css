@@ -1,0 +1,33 @@
+/* ToggleButton.css */
+
+/* Button styles */
+.toggle-button {
+  background-color: transparent;
+  color: #000000; /* Default color for light mode */
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+.toggle-button:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode styles */
+.toggle-button.dark-mode {
+  color: #fff; /* Color for dark mode */
+}
+
+/* Icon styles */
+.toggle-icon {
+  margin-right: 5px; /* Add margin to separate the icon from text */
+  font-size: 25px; /* Increase font size for the icon */
+  transition: transform 0.3s ease; /* Add transition effect for icon rotation */
+}
+
+/* Dark mode icon styles */
+.toggle-icon.dark-mode {
+  transform: rotate(180deg); /* Rotate the icon 180 degrees for dark mode */
+}

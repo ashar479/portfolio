@@ -1,0 +1,92 @@
+.projects {
+  padding: 2%;
+  background-color: rgb(243, 244, 246);
+  overflow: hidden; /* Ensure only visible area is shown */
+  position: relative; /* Position for scroll buttons */
+}
+
+.projects h2 {
+  font-size: 3rem; /* Adjusted font size */
+  margin-bottom: 20px; /* Adjusted margin */
+}
+
+.projects .project {
+  flex: 0 0 auto;
+  width: calc(
+    (100% - 120px) / 3
+  ); /* Adjust the width of the cards dynamically */
+  min-width: 400px; /* Set a larger minimum width for the cards */
+}
+
+.projects .projects-container {
+  display: flex;
+  gap: 20px; /* Adjust as needed */
+  padding-bottom: 20px; /* Add some padding to prevent the last card from being hidden behind the arrow buttons */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  width: calc(
+    100% + 80px
+  ); /* Ensure the container occupies full width including the width of scroll buttons */
+  position: relative; /* Ensure position is relative for absolute positioning of scroll buttons */
+  height: 530px; /* Set the desired height of the container */
+}
+
+.projects .project:last-child {
+  margin-right: 0; /* Remove right margin for the last card */
+}
+
+.projects .scroll-button {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 4rem; /* Increased font size for even bigger arrows */
+  cursor: pointer;
+  color: #666; /* Color of the arrows */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.projects .scroll-button:hover {
+  color: #333; /* Color of the arrows on hover */
+}
+
+.projects .scroll-button.left {
+  left: 0;
+}
+
+.projects .scroll-button.right {
+  right: 0;
+}
+/* Media Query for smaller screens */
+@media only screen and (max-width: 800px) {
+  .projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .projects .project {
+    width: 250px; /* Adjust as needed */
+  }
+
+  .projects .scroll-button {
+    font-size: 1.5rem; /* Adjust button size */
+  }
+}
+
+/* Dark mode styles */
+.dark-mode .projects {
+  background-color: #444444;
+}
+
+.dark-mode .projects h2,
+.dark-mode .projects .project h3,
+.dark-mode .projects .project p,
+.dark-mode .projects .scroll-button,
+.dark-mode .projects .project img {
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode .projects .scroll-button:hover {
+  color: black;
+}
