@@ -22,6 +22,7 @@ const Card = ({
     padding: '20px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     transition: 'transform 0.6s',
+    textAlign: 'left', // Align text to the left
   };
 
   return (
@@ -29,9 +30,11 @@ const Card = ({
       <div className="card-front" style={cardStyle}>
         <h3>{title}</h3>
       </div>
-      <div className="card-back">
+      <div className="card-back" style={{ alignItems: 'flex-start' }}>
+        {' '}
+        {/* Align items to the start */}
         <h3>{title}</h3>
-        <p>{description}</p>
+        <p style={{ textAlign: 'left' }}>{description}</p>
         <p>
           <strong className="headings">Duration:</strong> {duration}
         </p>
