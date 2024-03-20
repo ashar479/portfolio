@@ -7,6 +7,7 @@ import AboutMe from './components/AboutMe';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import ResearchPublications from './components/ResearchPublications';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -49,6 +50,7 @@ const App = () => {
 
   return (
     <div className={`App ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+      <Analytics />
       <Header
         onToggleDarkMode={toggleDarkMode}
         isDarkMode={isDarkMode}
