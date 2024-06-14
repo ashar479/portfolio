@@ -69,7 +69,7 @@ const Home = ({ isDarkMode, id }) => {
               >
                 👋
               </span>{' '}
-              Hello Software Recruiters, I am Ansh Sharma
+              Dear Hiring Manager, I am Ansh Sharma
             </h1>
           </div>
           <p className="home-typing-effect">
@@ -77,7 +77,7 @@ const Home = ({ isDarkMode, id }) => {
           </p>
           <h2>
             I am currently a student pursuing MS in Software Engineering at
-            Arizona State University. I am looking for internships for summer
+            Arizona State University. I am looking for jobs starting from Summer and Fall
             2024.
           </h2>
           <div className="social-buttons">
