@@ -1,0 +1,129 @@
+/* Main container */
+#birthdayDiv {
+  text-align: center;
+  padding: 50px;
+  background-color: #ffe6e6;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 20px 0;
+}
+
+/* Image styling */
+.mom-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #ff9999;
+  margin-bottom: 20px;
+}
+
+/* Graffiti style text */
+.graffiti {
+  color: #cc0000;
+  font-size: 3em;
+  font-family: 'Cursive', sans-serif;
+  text-shadow: 
+    3px 3px #ffcc00, 
+    -3px -3px #00ccff, 
+    3px -3px #ff66ff, 
+    -3px 3px #66ff66, 
+    5px 5px #ff9966; /* Multiple shadows for graffiti effect */
+}
+
+/* Paragraph styling */
+#birthdayDiv p {
+  font-size: 18px;
+  color: #800000;
+}
+
+/* Balloons container */
+.balloons {
+  position: relative;
+  height: 400px; /* Increase height for more balloons */
+  overflow: hidden;
+}
+
+/* Individual balloon styling and animation */
+.balloon {
+  position: absolute;
+  bottom: -100px;
+  width: 30px;
+  height: 40px;
+  background-color: #ff6666;
+  border-radius: 50%;
+  animation: float 7s ease-in-out infinite;
+}
+
+.balloon:nth-child(odd) {
+  background-color: #66ccff;
+}
+
+.balloon:nth-child(even) {
+  background-color: #ff66ff;
+}
+
+.balloon:nth-child(3n) {
+  background-color: #66ff66;
+}
+
+.balloon:nth-child(2) {
+  left: 10px;
+  animation-delay: 2s;
+}
+
+.balloon:nth-child(3) {
+  left: 70px;
+  animation-delay: 3s;
+}
+
+.balloon:nth-child(4) {
+  left: 130px;
+  animation-delay: 4s;
+}
+
+/* More positions and delays for more balloons */
+.balloon:nth-child(5) {
+  left: 190px;
+  animation-delay: 1s;
+}
+
+.balloon:nth-child(6) {
+  left: 250px;
+  animation-delay: 1.5s;
+}
+
+.balloon:nth-child(7) {
+  left: 310px;
+  animation-delay: 3.5s;
+}
+
+.balloon:nth-child(8) {
+  left: 370px;
+  animation-delay: 4.5s;
+}
+
+.balloon:nth-child(9) {
+  left: 430px;
+  animation-delay: 2.5s;
+}
+
+.balloon:nth-child(10) {
+  left: 490px;
+  animation-delay: 5s;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    bottom: 500px;
+    transform: translateX(0);
+  }
+}

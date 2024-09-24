@@ -8,6 +8,7 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import ResearchPublications from './components/ResearchPublications';
 import { Analytics } from '@vercel/analytics/react';
+import BirthdayBanner from './components/BirthdayBanner';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -58,6 +59,7 @@ const App = () => {
       />
       <div className="App-content">
         <Home isDarkMode={isDarkMode} id="home" />
+        <BirthdayBanner />
         <AboutMe isDarkMode={isDarkMode} id="about" />
         <Education isDarkMode={isDarkMode} id="education" />
         <Projects isDarkMode={isDarkMode} id="projects" />
