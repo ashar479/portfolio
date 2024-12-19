@@ -17,6 +17,14 @@ import Scrum from './images_tools/scrum.svg';
 import Heroku from './images_tools/heroku.svg';
 import Docker from './images_tools/docker.svg';
 import Cucumber from './images_tools/cucumber.svg';
+import Unity from './images_tools/Unity.jpg';
+import Protege from './images_tools/protege.png';
+import Sparql from './images_tools/sparql.webp';
+import Graphdb from './images_tools/GraphDB.webp';
+import Maven from './images_tools/maven.png';
+import Gradle from './images_tools/gradle.jpg';
+import Wireshark from './images_tools/wireshark.png';
+import Huggingface from './images_tools/hugging_face.png';
 
 const AboutMe = ({ isDarkMode, id }) => {
   const [showButtons, setShowButtons] = useState([]);
@@ -32,7 +40,7 @@ const AboutMe = ({ isDarkMode, id }) => {
           // Only proceed if the group element exists
           if (group) {
             const triggerPosition =
-              group.offsetTop + group.clientHeight / 2 + 200;
+              group.offsetTop + group.clientHeight / 1 + 350;
 
             setShowButtons((prevState) => {
               const updatedState = [...prevState];
@@ -56,45 +64,52 @@ const AboutMe = ({ isDarkMode, id }) => {
       <h2>About Me</h2>
       <p>
         I am a passionate software engineer with a keen interest in machine
-        learning and front-end development. Currently pursuing my Master's
-        degree in Software Engineering at Arizona State University, I have
-        hands-on experience with various technologies and frameworks such as
-        React.js, Next.js, and TensorFlow.
+        learning and full-stack development. Currently pursuing Master's degree
+        in Software Engineering at Arizona State University, I have hands-on
+        experience with various technologies and frameworks such as React.js,
+        and TensorFlow.
       </p>
       <p>
         Outside of coding, I enjoy reading about new technologies, exploring
-        nature, and playing the guitar. I am enthusiastic about learning and
-        always eager to take on new challenges in the field of software
-        engineering.
+        nature, and playing guitar. I am enthusiastic about learning and always
+        eager to take on new challenges in the field of software engineering. I
+        also love participating in competitive programming.
       </p>
-      <h2>Tools and Technologies</h2>
+      <h2>Tools and Frameworks</h2>
       <p>
-        In my project experiences, I've leveraged a diverse toolkit spanning
-        various programming languages and development methodologies. I've
-        adeptly utilized Java and its GUI library, Java Swing, to craft
-        intuitive user interfaces. Testing has been a cornerstone, employing
-        JUnit Jupiter (Junit 5) for comprehensive testing suites. Python has
-        been instrumental for its versatility in scripting and data processing
-        tasks. Version control through Git has ensured seamless collaboration
-        and code management. Deep learning projects have benefited from
-        TensorFlow's powerful capabilities. Web development has seen me
-        proficiently utilize React.js and Next.js for dynamic front-end
-        experiences. Project management methodologies such as Taiga and Scrum,
-        coupled with IEEE standards, have facilitated organized and efficient
-        workflows. JavaScript and its ecosystem, including React Native, have
-        empowered mobile and web development endeavors. HTML and CSS have laid
-        the groundwork for visually appealing and responsive web interfaces.
-        Deployment on platforms like Heroku has ensured accessibility and
-        scalability. Robust testing frameworks like Surefire and Jacoco have
-        enabled comprehensive code coverage analysis and quality assurance
-        throughout development cycles.
+        In my past project experiences, I’ve leveraged a robust set of tools and
+        technologies to deliver efficient and high-quality solutions. Java has
+        been central to developing scalable applications, paired with frameworks
+        like JUnit 5 and Cucumber to implement Test-Driven Development (TDD) and
+        Behavior-Driven Development (BDD) practices. For front-end and mobile
+        development, I’ve utilized React.js and React Native to craft dynamic
+        user interfaces, ensuring responsiveness and cross-platform
+        compatibility. Tools like Docker and Heroku have enabled seamless
+        containerization and deployment, making applications accessible and
+        scalable. I’ve employed MySQL for database management, while Wireshark
+        was instrumental in analyzing and optimizing network performance. For
+        project management, Jira, Taiga, and Scrum methodologies have ensured
+        organized workflows and team efficiency. In deep learning and AI,
+        TensorFlow and pre-trained models from Hugging Face have been key for
+        building intelligent solutions. I’ve also explored GraphDB and SPARQL
+        for semantic web projects, using Protege to design ontologies. Tools
+        like Maven, Gradle, and Apache Ant have streamlined project builds and
+        dependency management. Additionally, I’ve leveraged Unity Hub for game
+        programming and ChatGPT to optimize workflows through automation and
+        idea generation. These tools collectively empower me to deliver
+        impactful software solutions across web, mobile, AI, and semantic web
+        domains.
       </p>
       <div className={`button-group ${showButtons[0] ? 'show' : ''}`}>
-        <button onClick={() => window.open('https://www.java.com/', '_blank')}>
+        <button
+          title="Java"
+          onClick={() => window.open('https://www.java.com/', '_blank')}
+        >
           <img src={Java} alt="" />
           Java
         </button>
         <button
+          title="Jira"
           onClick={() =>
             window.open('https://www.atlassian.com/software/jira', '_blank')
           }
@@ -103,6 +118,7 @@ const AboutMe = ({ isDarkMode, id }) => {
           Jira
         </button>
         <button
+          title="Test Driven Development"
           onClick={() =>
             window.open(
               'https://testdriven.io/test-driven-development/',
@@ -114,6 +130,7 @@ const AboutMe = ({ isDarkMode, id }) => {
           TDD
         </button>
         <button
+          title="ChatGPT"
           onClick={() => window.open('https://openai.com/chatgpt', '_blank')}
         >
           <img src={Chatgpt} alt="" />
@@ -122,6 +139,7 @@ const AboutMe = ({ isDarkMode, id }) => {
       </div>
       <div className={`button-group ${showButtons[1] ? 'show' : ''}`}>
         <button
+          title="Cucumber Test Framework"
           onClick={() =>
             window.open('https://cucumber.io/docs/cucumber/', '_blank')
           }
@@ -129,17 +147,22 @@ const AboutMe = ({ isDarkMode, id }) => {
           <img src={Cucumber} alt="" />
           Cucumber
         </button>
-        <button onClick={() => window.open('https://reactjs.org/', '_blank')}>
+        <button
+          title="React.js Framework"
+          onClick={() => window.open('https://reactjs.org/', '_blank')}
+        >
           <img src={ReactLogo} alt="" />
           React.js
         </button>
         <button
+          title="Ant Framework"
           onClick={() => window.open('https://ant.apache.org/', '_blank')}
         >
           <img src={Ant} alt="" />
           Apache Ant
         </button>
         <button
+          title="React Native for Mobile Development"
           onClick={() => window.open('https://reactnative.dev/', '_blank')}
         >
           <img src={ReactNative} alt="" />
@@ -148,24 +171,28 @@ const AboutMe = ({ isDarkMode, id }) => {
       </div>
       <div className={`button-group ${showButtons[2] ? 'show' : ''}`}>
         <button
+          title="Junit5 Test Framework"
           onClick={() => window.open('https://junit.org/junit5/', '_blank')}
         >
           <img src={Junit} alt="" />
           Junit Jupiter (Junit 5)
         </button>
         <button
+          title="Tensorflow for ML"
           onClick={() => window.open('https://www.tensorflow.org/', '_blank')}
         >
           <img src={TensorFlow} alt="" />
           TensorFlow
         </button>
         <button
+          title="Docker"
           onClick={() => window.open('https://www.docker.com/', '_blank')}
         >
           <img src={Docker} alt="" />
           Docker
         </button>
         <button
+          title="Heroku"
           onClick={() => window.open('https://www.heroku.com/', '_blank')}
         >
           <img src={Heroku} alt="" />
@@ -173,15 +200,22 @@ const AboutMe = ({ isDarkMode, id }) => {
         </button>
       </div>
       <div className={`button-group ${showButtons[3] ? 'show' : ''}`}>
-        <button onClick={() => window.open('https://git-scm.com/', '_blank')}>
+        <button
+          title="Git Version Control"
+          onClick={() => window.open('https://git-scm.com/', '_blank')}
+        >
           <img src={Git} alt="" />
           Git
         </button>
-        <button onClick={() => window.open('https://www.taiga.io/', '_blank')}>
+        <button
+          title="Taiga.io for Scrum"
+          onClick={() => window.open('https://www.taiga.io/', '_blank')}
+        >
           <img src={Taiga} alt="" />
-          Taiga
+          Taiga.io
         </button>
         <button
+          title="Scrum Development"
           onClick={() =>
             window.open('https://www.atlassian.com/agile/scrum', '_blank')
           }
@@ -189,9 +223,74 @@ const AboutMe = ({ isDarkMode, id }) => {
           <img src={Scrum} alt="" />
           Scrum
         </button>
-        <button onClick={() => window.open('https://www.mysql.com/', '_blank')}>
+        <button
+          title="MySql"
+          onClick={() => window.open('https://www.mysql.com/', '_blank')}
+        >
           <img src={Mysql} alt="" />
           MySql
+        </button>
+      </div>
+      <div className={`button-group ${showButtons[4] ? 'show' : ''}`}>
+        <button
+          title="Unity Hub"
+          onClick={() => window.open('https://unity.com/', '_blank')}
+        >
+          <img src={Unity} alt="" />
+          Unity 5
+        </button>
+        <button
+          title="Ontotext GraphDb"
+          onClick={() => window.open('https://graphdb.ontotext.com/', '_blank')}
+        >
+          <img src={Graphdb} alt="" />
+          GraphDb
+        </button>
+        <button
+          title="Sparql Document"
+          onClick={() =>
+            window.open('https://www.w3.org/TR/sparql11-query/', '_blank')
+          }
+        >
+          <img src={Sparql} alt="" />
+          SPARQL
+        </button>
+        <button
+          title="Protege by Stanford"
+          onClick={() => window.open('https://protege.stanford.edu/', '_blank')}
+        >
+          <img src={Protege} alt="" />
+          Protege
+        </button>
+      </div>
+      <div className={`button-group ${showButtons[5] ? 'show' : ''}`}>
+        <button
+          title="Wireshark Network Packet Sniffing"
+          onClick={() => window.open('https://www.wireshark.org/', '_blank')}
+        >
+          <img src={Wireshark} alt="" />
+          Wireshark
+        </button>
+        <button
+          title="HuggingFace for Ai/ML"
+          onClick={() => window.open('https://huggingface.co/', '_blank')}
+        >
+          <img src={Huggingface} alt="" />
+          HuggingFace
+        </button>
+        <button
+          title="Java Maven Framework"
+          onClick={() => window.open('https://maven.apache.org/', '_blank')}
+        >
+          <img src={Maven} alt="" />
+          Maven
+        </button>
+        <button
+          title="Java Gradle Framework"
+          onClick={() => window.open('https://gradle.org/', '_blank')}
+        >
+          <img src={Gradle} alt="" />
+          Gradle
         </button>
       </div>
     </section>

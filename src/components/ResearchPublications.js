@@ -21,6 +21,7 @@ const ResearchPublications = ({ id, isDarkMode }) => {
         <p>doi: 10.1109/CSCITA55725.2023.10104969</p>
         <p>
           <a
+            title="My research paper on Deep Learning"
             href="https://ieeexplore.ieee.org/abstract/document/10104969"
             target="_blank"
             rel="noopener noreferrer"

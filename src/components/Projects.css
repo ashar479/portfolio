@@ -1,92 +1,173 @@
 .projects {
-  padding: 2%;
-  background-color: rgb(243, 244, 246);
-  overflow: hidden; /* Ensure only visible area is shown */
-  position: relative; /* Position for scroll buttons */
+  padding: 4%;
+  background-color: rgb(250, 250, 250);
 }
 
 .projects h2 {
-  font-size: 3rem; /* Adjusted font size */
-  margin-bottom: 20px; /* Adjusted margin */
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #333;
 }
 
-.projects .project {
-  flex: 0 0 auto;
-  width: calc(
-    (100% - 120px) / 3
-  ); /* Adjust the width of the cards dynamically */
-  min-width: 400px; /* Set a larger minimum width for the cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+  gap: 1.5rem; /* Space between cards */
 }
 
-.projects .projects-container {
-  display: flex;
-  gap: 20px; /* Adjust as needed */
-  padding-bottom: 20px; /* Add some padding to prevent the last card from being hidden behind the arrow buttons */
-  overflow-x: auto; /* Allow horizontal scrolling */
-  width: calc(
-    100% + 80px
-  ); /* Ensure the container occupies full width including the width of scroll buttons */
-  position: relative; /* Ensure position is relative for absolute positioning of scroll buttons */
-  height: 530px; /* Set the desired height of the container */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.projects .project:last-child {
-  margin-right: 0; /* Remove right margin for the last card */
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.projects .scroll-button {
-  z-index: 1;
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+  filter: blur(10px); /* Initial blur effect */
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project-card:hover .project-image img {
+  filter: blur(0); /* Remove blur on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.project-overlay {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  font-size: 4rem; /* Increased font size for even bigger arrows */
-  cursor: pointer;
-  color: #666; /* Color of the arrows */
-  transition: color 0.3s; /* Smooth transition for color change */
-}
-
-.projects .scroll-button:hover {
-  color: #333; /* Color of the arrows on hover */
-}
-
-.projects .scroll-button.left {
+  top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.projects .scroll-button.right {
-  right: 0;
+.project-card:hover .project-overlay {
+  opacity: 1;
 }
-/* Media Query for smaller screens */
-@media only screen and (max-width: 800px) {
-  .projects h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
 
-  .projects .project {
-    width: 250px; /* Adjust as needed */
-  }
+.project-overlay h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  .projects .scroll-button {
-    font-size: 1.5rem; /* Adjust button size */
-  }
+.details-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.collaborate-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.collaborate-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.collaborate-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.collaborate-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.dark-mode .collaborate-section p {
+  color: #ddd;
+}
+
+.dark-mode .collaborate-button {
+  background-color: #1e90ff;
+}
+
+.dark-mode .collaborate-button:hover {
+  background-color: #6495ed;
 }
 
 /* Dark mode styles */
 .dark-mode .projects {
-  background-color: #444444;
+  background-color: #444;
 }
 
-.dark-mode .projects h2,
-.dark-mode .projects .project h3,
-.dark-mode .projects .project p,
-.dark-mode .projects .scroll-button,
-.dark-mode .projects .project img {
-  color: rgb(255, 255, 255);
+.dark-mode .projects h2 {
+  color: #fff;
 }
 
-.dark-mode .projects .scroll-button:hover {
-  color: black;
+.dark-mode .project-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .details-button {
+  background-color: #1e90ff;
+}
+
+.dark-mode .details-button:hover {
+  background-color: #6495ed;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 800px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  .project-card {
+    border-radius: 8px;
+  }
+
+  .project-overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .details-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
 }

@@ -1,0 +1,138 @@
+.work {
+  padding: 1%;
+  background-color: rgb(243 244 246);
+}
+
+.work h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.course-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.course-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 10px;
+  margin-top: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 20px;
+  border-left: 2px solid #007bff;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.timeline-content h4 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.timeline-content .duration {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.timeline-content li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Dark mode styles */
+.dark-mode .work {
+  background-color: #444444;
+}
+
+.dark-mode .work h2 {
+  color: rgb(219, 219, 219);
+}
+
+.dark-mode .timeline-item::before {
+  background-color: #ffffff;
+}
+
+.dark-mode .timeline-content {
+  background: #333;
+  border-color: #555;
+}
+
+.dark-mode .timeline-content h3 {
+  color: #1e90ff;
+}
+
+.dark-mode .timeline-content h4,
+.dark-mode .timeline-content .duration,
+.dark-mode .timeline-content li {
+  color: rgb(219, 219, 219);
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 800px) {
+  .work h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .timeline-content {
+    padding: 1rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1rem;
+  }
+
+  .timeline-content li {
+    font-size: 0.9rem;
+  }
+}

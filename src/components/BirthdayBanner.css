@@ -1,4 +1,4 @@
-/* Main container */
+/* Main container
 #birthdayDiv {
   text-align: center;
   padding: 50px;
@@ -9,7 +9,6 @@
   margin: 20px 0;
 }
 
-/* Image styling */
 .mom-image {
   width: 150px;
   height: 150px;
@@ -18,7 +17,6 @@
   margin-bottom: 20px;
 }
 
-/* Graffiti style text */
 .graffiti {
   color: #cc0000;
   font-size: 3em;
@@ -28,23 +26,20 @@
     -3px -3px #00ccff, 
     3px -3px #ff66ff, 
     -3px 3px #66ff66, 
-    5px 5px #ff9966; /* Multiple shadows for graffiti effect */
+    5px 5px #ff9966;
 }
 
-/* Paragraph styling */
 #birthdayDiv p {
   font-size: 18px;
   color: #800000;
 }
 
-/* Balloons container */
 .balloons {
   position: relative;
-  height: 400px; /* Increase height for more balloons */
+  height: 400px;
   overflow: hidden;
 }
 
-/* Individual balloon styling and animation */
 .balloon {
   position: absolute;
   bottom: -100px;
@@ -82,7 +77,6 @@
   animation-delay: 4s;
 }
 
-/* More positions and delays for more balloons */
 .balloon:nth-child(5) {
   left: 190px;
   animation-delay: 1s;
@@ -113,7 +107,6 @@
   animation-delay: 5s;
 }
 
-/* Floating animation */
 @keyframes float {
   0% {
     bottom: -100px;
@@ -127,3 +120,4 @@
     transform: translateX(0);
   }
 }
+*/
