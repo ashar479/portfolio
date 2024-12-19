@@ -64,6 +64,7 @@ const Footer = () => {
           </h2>
           <form onSubmit={handleSubmit}>
             <input
+              title="Enter your name"
               type="text"
               name="name"
               placeholder="Your Name"
@@ -71,6 +72,7 @@ const Footer = () => {
               onChange={handleChange}
             />
             <input
+              title="Enter your email"
               type="email"
               name="email"
               placeholder="Your Email"
@@ -78,25 +80,29 @@ const Footer = () => {
               onChange={handleChange}
             />
             <textarea
+              title="Enter your message"
               name="message"
               className="message"
               placeholder="Your Message"
               value={formData.message}
               onChange={handleChange}
             ></textarea>
-            <button type="submit">Send Message</button>
+            <button title="Submit your form" type="submit">
+              Send Message
+            </button>
           </form>
         </div>
         <div className="info-section">
           <div>
             <h3>Address</h3>
-            <p>1019 East Lemon Street</p>
-            <p>Tempe, Arizona, United States - 85281</p>
+            <p>1221 E Broadway Rd, Apt. 2068</p>
+            <p>Tempe, Arizona, United States - 85282</p>
           </div>
           <div>
             <h3>Social Media</h3>
             <div className="social-buttons">
               <a
+                title="Linkedin"
                 href="https://www.linkedin.com/in/anshsharma120601/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -104,13 +110,15 @@ const Footer = () => {
                 <img src={LinkedIn} alt="LinkedIn" />
               </a>
               <a
-                href="https://github.com/anshsharma120601"
+                title="Github"
+                href="https://github.com/ashar479"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src={GitHub} alt="GitHub" />
               </a>
               <a
+                title="Instagram"
                 href="https://www.instagram.com/anshsharma1206/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -118,6 +126,7 @@ const Footer = () => {
                 <img src={Insta} alt="Instagram" />
               </a>
               <a
+                title="Facebook"
                 href="https://www.facebook.com/profile.php?id=100001596154001"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -129,12 +138,17 @@ const Footer = () => {
           <div>
             <h3>Email</h3>
             <p>
-              <a href="mailto:anshsharma120601@gmail.com">
+              <a
+                title="My personal email"
+                href="mailto:anshsharma120601@gmail.com"
+              >
                 anshsharma120601@gmail.com
               </a>
             </p>
             <p>
-              <a href="mailto:ashar479@asu.edu">ashar479@asu.edu</a>
+              <a title="My work email" href="mailto:ashar479@asu.edu">
+                ashar479@asu.edu
+              </a>
             </p>
           </div>
           <div>
@@ -143,7 +157,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p>&copy; 2024 Ansh Sharma | All Rights Reserved</p>
+      <p>&copy; 2024 anshsharma120601 | All Rights Reserved</p>
     </footer>
   );
 };

@@ -1,0 +1,149 @@
+/* General Styles */
+.yolo-container {
+  font-family: 'Arial', sans-serif;
+  color: #1d3557;
+  background-color: #f8f9fa;
+  padding: 0 20px;
+}
+
+/* Header */
+.yolo-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #457b9d, #1d3557);
+  color: #fff;
+}
+
+.yolo-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.yolo-header p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Introduction */
+.yolo-intro {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.yolo-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #457b9d;
+}
+
+/* Features */
+.yolo-features {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.yolo-features h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  background: #f1faee;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #457b9d;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Image Section */
+.yolo-image {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.yolo-image h2 {
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 20px;
+}
+
+.yolo-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.yolo-image p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #6c757d;
+}
+
+/* GitHub Section */
+.yolo-github {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.yolo-github h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #457b9d;
+}
+
+.yolo-github p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1d3557;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-link:hover {
+  background-color: #457b9d;
+}
+
+/* Footer */
+.yolo-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #457b9d;
+  color: #fff;
+  font-size: 0.9rem;
+}

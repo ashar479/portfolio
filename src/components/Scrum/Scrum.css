@@ -1,0 +1,160 @@
+/* General Styles */
+.scrum-container {
+  font-family: 'Arial', sans-serif;
+  color: #222;
+  background-color: #fcf8e8;
+  padding: 0 20px;
+}
+
+/* Header */
+.scrum-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  color: #fff;
+}
+
+.scrum-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.scrum-header p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Introduction */
+.scrum-intro {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.scrum-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #4e4376;
+}
+
+/* Features */
+.scrum-features {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scrum-features h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2b5876;
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #4e4376;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Gallery */
+.scrum-gallery {
+  margin: 50px 0;
+}
+
+.scrum-gallery h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2b5876;
+  margin-bottom: 20px;
+}
+
+.gallery-item {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.gallery-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2b5876;
+}
+
+.gallery-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* GitHub Section */
+.scrum-github {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.scrum-github h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2b5876;
+}
+
+.scrum-github p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4e4376;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-link:hover {
+  background-color: #2b5876;
+}
+
+/* Footer */
+.scrum-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2b5876;
+  color: #fff;
+  font-size: 0.9rem;
+}

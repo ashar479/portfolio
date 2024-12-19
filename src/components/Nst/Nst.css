@@ -1,0 +1,149 @@
+/* General Styles */
+.nst-container {
+  font-family: 'Arial', sans-serif;
+  color: #2b2d42;
+  background-color: #edf2f4;
+  padding: 0 20px;
+}
+
+/* Header */
+.nst-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #8d99ae, #2b2d42);
+  color: #fff;
+}
+
+.nst-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.nst-header p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Introduction */
+.nst-intro {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.nst-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #8d99ae;
+}
+
+/* Features */
+.nst-features {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nst-features h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2b2d42;
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #8d99ae;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Image Section */
+.nst-image {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.nst-image h2 {
+  font-size: 2rem;
+  color: #2b2d42;
+  margin-bottom: 20px;
+}
+
+.nst-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nst-image p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #6c757d;
+}
+
+/* GitHub Section */
+.nst-github {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.nst-github h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #8d99ae;
+}
+
+.nst-github p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2b2d42;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-link:hover {
+  background-color: #8d99ae;
+}
+
+/* Footer */
+.nst-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2b2d42;
+  color: #fff;
+  font-size: 0.9rem;
+}

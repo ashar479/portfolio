@@ -1,0 +1,115 @@
+/* General Styles */
+.android-container {
+  font-family: 'Arial', sans-serif;
+  color: #24292f;
+  background-color: #f6f8fa;
+  padding: 0 20px;
+}
+
+/* Header */
+.android-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #0366d6, #24292f);
+  color: #fff;
+}
+
+.android-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.android-header p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Introduction */
+.android-intro {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.android-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0366d6;
+}
+
+/* Features */
+.android-features {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.android-features h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #24292f;
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  background: #eef3f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #0366d6;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* QR Code Section */
+.android-qr-section {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.android-qr-section h2 {
+  font-size: 2rem;
+  color: #24292f;
+  margin-bottom: 20px;
+}
+
+.android-qr-section img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.android-qr-section p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #6c757d;
+}
+
+/* Footer */
+.android-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #24292f;
+  color: #fff;
+  font-size: 0.9rem;
+}
