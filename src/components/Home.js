@@ -6,14 +6,12 @@ import Facebook from './images/facebook.svg';
 import LinkedIn from './images/linkedin.svg';
 import GitHub from './images/github.svg';
 import ResumePopup from './ResumePopup'; // Import the ResumePopup component
-import Resume from './images/Resume_Ansh_Sharma_Software_Engineer.pdf';
-import CoverLetter from './images/Ansh_Sharma_Cover_Letter.pdf';
+import Resume from './images/Ansh_Sharma_Software_Engineer.pdf';
 import Leetcode from './images/leetcode.svg';
 
 const Home = ({ isDarkMode, id }) => {
   const [isWaving, setIsWaving] = useState(false);
   const [showResumePopup, setShowResumePopup] = useState(false);
-  const [showCoverLetterPopup, setShowCoverLetterPopup] = useState(false);
 
   const handleWave = () => {
     setIsWaving(true);
@@ -25,10 +23,6 @@ const Home = ({ isDarkMode, id }) => {
 
   const handleResumePopup = () => {
     setShowResumePopup(!showResumePopup);
-  };
-
-  const handleCoverLetterPopup = () => {
-    setShowCoverLetterPopup(!showCoverLetterPopup);
   };
 
   const [isShaking, setIsShaking] = useState(false);
@@ -77,10 +71,19 @@ const Home = ({ isDarkMode, id }) => {
           </p>
           <h2>
             I am a graduate student pursuing MS in Software Engineering at
-            Arizona State University. I am currently workkng as a Teaching
+            Arizona State University. I am currently working as a Teaching
             Assistant at Arizona State University for the courses, (SER315)
-            Software Design and Processes and (SER321) Software Systems and
-            (SER450) Computer Architecture.
+            Software Design and Processes, (SER321) Software Systems, and
+            (SER450) Computer Architecture. I am also a Software Engineer Intern
+            @
+            <a
+              href="https://roundtechsquare.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              RoundTechSquare
+            </a>
+            , for the Spring semester 2025.
           </h2>
           <div className="social-buttons">
             <a
@@ -128,12 +131,6 @@ const Home = ({ isDarkMode, id }) => {
             <button title="Resume in PDF format" onClick={handleResumePopup}>
               Resume
             </button>
-            <button
-              title="Cover Letter in PDF format"
-              onClick={handleCoverLetterPopup}
-            >
-              Cover_Letter
-            </button>
           </div>
         </div>
         <div
@@ -144,9 +141,6 @@ const Home = ({ isDarkMode, id }) => {
       </div>
       {showResumePopup && (
         <ResumePopup resumeUrl={Resume} onClose={handleResumePopup} />
-      )}
-      {showCoverLetterPopup && (
-        <ResumePopup resumeUrl={CoverLetter} onClose={handleCoverLetterPopup} />
       )}
     </div>
   );
