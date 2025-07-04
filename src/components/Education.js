@@ -21,7 +21,7 @@ const Education = ({ id, isDarkMode }) => {
         <h3>Master of Science (Software Engineering)</h3>
         <p>Arizona State University, Tempe, Arizona - 85281</p>
         <p>August 2023 - May 2025</p>
-        <p>Cumulative GPA: 3.8 / 4.0</p>
+        <p>Cumulative GPA: 3.85 / 4.0</p>
         <p>Relevant Coursework:</p>
         <ul>
           <li>
@@ -104,6 +104,30 @@ const Education = ({ id, isDarkMode }) => {
               Game Programming (SER594/494)
             </a>
           </li>
+
+          {/*  */}
+          <li>
+            <a
+              title="ASU SER566"
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Software Project, Process and Quality Management (SER566)
+            </a>
+          </li>
+          <li>
+            <a
+              title="ASU SER517"
+              href="https://sites.google.com/asu.edu/scaigraduateprogramresources/culminating-events/dse-ser-capstone-course"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Software Factory Capstone (SER517)
+            </a>
+          </li>
+
+          {/*  */}
         </ul>
         <div className="resume-button">
           <button title="ASU Transcripts" onClick={handleTranscriptPopup}>
@@ -113,7 +137,7 @@ const Education = ({ id, isDarkMode }) => {
         <h3>
           Bachelor of Technology (Electronics and Communication Engineering)
         </h3>
-        <p>Netaji Subhas University of Technology, New Delhi, India</p>
+        <p>Netaji Subhas University of Technology, New Delhi, India - 110031</p>
         <p>August 2019 - July 2023</p>
         <p>Cumulative GPA: 8.3/10.0</p>
         <p>

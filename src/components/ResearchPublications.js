@@ -8,7 +8,7 @@ const ResearchPublications = ({ id, isDarkMode }) => {
       id={id}
       className={`research-publications ${isDarkMode ? 'dark-mode' : ''}`}
     >
-      <h2>Research and Publications</h2>
+      <h2>Research Publication</h2>
       <div className="publication-entry">
         <h3>
           Efficient Detection of Small and Complex Objects for Autonomous
