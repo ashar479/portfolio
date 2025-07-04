@@ -4,6 +4,26 @@ import './Work.css';
 const Work = ({ id, isDarkMode }) => {
   const workExperience = [
     {
+      title: 'Software Engineer / QA Intern',
+      organization: 'EyCrowd, San Francisco, CA',
+      duration: 'June 2025 – Present',
+      highlights: [
+        'Developed cross-platform features for the EyCrowd mobile app using React Native, and wrote unit tests with Jest and React Testing Library to ensure component stability and UI reliability across devices',
+        'Worked with Salesforce CRM to align campaign tracking with internal pipelines, and set up Docker test environments for QA validation and internal deployment consistency',
+        'Collaborated with AI engineers to evaluate LLM integration patterns and optimize user engagement logic, using Mixpanel to track behavior and contributing to a redesign that improved daily active usage by 25% approximately',
+      ],
+    },
+    {
+      title: 'Software Engineer Intern',
+      organization: 'RoundTechSquare, San Francisco, CA',
+      duration: 'Jan 2025 – May 2025',
+      highlights: [
+        'Built a cloud-native inventory management system using React.js, and Amazon Web Services (AWS) including S3, EC2, DynamoDB, reducing manual errors by 30%',
+        'Automated CI/CD pipelines with Jenkins and GitHub Actions, containerized services using Docker, and implemented performance monitoring with Grafana, reducing deploy issues and improving service reliability',
+        'Collaborated with product managers and analysts to define scalable data workflows, using Postman to validate endpoints and enhance internal API adoption alongside Swagger-based documentation',
+      ],
+    },
+    {
       title: 'Teaching Assistant',
       organization: 'Arizona State University, Tempe, Arizona',
       duration: 'August 2023 – Present',
@@ -29,13 +49,13 @@ const Work = ({ id, isDarkMode }) => {
       ],
     },
     {
-      title: 'React Developer and Test Intern',
+      title: 'Software Engineer',
       organization: 'Hiration Career Technologies, New Delhi, India',
-      duration: 'June 2021 – August 2021',
+      duration: 'Jun 2020 – Nov 2022',
       highlights: [
-        'Implemented React and Next.js to develop server-side rendered web applications integrated with Node.js backends.',
-        'Used Git for version control and facilitated deployment via Vercel.',
-        'Designed components using Figma and tested applications using JUnit 5 and JACOCO, achieving high code coverage.',
+        'Developed reusable React components using JSX, integrated with Next.js and Node.js, improving server-side rendering performance by 20% for Natural Language Processing models',
+        'Managed source control with Git, facilitated project deployment on Vercel, and optimized component design using Figma and Unified Modeling Language (UML) tools, reducing design-to-deployment time by 25%',
+        'Executed Exploratory Testing (white box) and JUnit5 (black box), achieving 95% code coverage with Java Code Coverage (JaCoCo) and maintaining software quality with a 99% DOI adherence rate',
       ],
     },
   ];

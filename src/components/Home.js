@@ -63,27 +63,43 @@ const Home = ({ isDarkMode, id }) => {
               >
                 👋
               </span>{' '}
-              Hello Hiring Team, I am Ansh Sharma
+              Dear Hiring Managers, I am Ansh Sharma
             </h1>
           </div>
           <p className="home-typing-effect">
-            Software Engineer|Deep Learning Researcher|TA@ASU
+            Software Engineer | Intern @EyCrowd | MS Software Engineering @ASU
           </p>
           <h2>
-            I am a graduate student pursuing MS in Software Engineering at
-            Arizona State University. I am currently working as a Teaching
-            Assistant at Arizona State University for the courses, (SER315)
-            Software Design and Processes, (SER321) Software Systems, and
-            (SER450) Computer Architecture. I am also a Software Engineer Intern
-            @
+            I’m a Software Engineer with experience building full-stack
+            applications using React, Node.js, PostgreSQL, and AWS. Currently
+            interning at{' '}
+            <a href="https://eycrowd.com/" target="_blank" rel="noreferrer">
+              EyCrowd
+            </a>
+            , I’m contributing to AI-driven platform development and user
+            engagement features while working with tools like Mixpanel,
+            Salesforce, and CI/CD pipelines. Previously, I worked on scalable
+            cloud-native systems at{' '}
             <a
               href="https://roundtechsquare.com/"
               target="_blank"
               rel="noreferrer"
             >
               RoundTechSquare
+            </a>{' '}
+            and developed NLP-based UI components at{' '}
+            <a
+              href="https://www.hiration.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Hiration
             </a>
-            , for the Spring semester 2025.
+            . My work spans CRM integrations, test automation, workflow
+            optimization, and frontend architecture. I’m passionate about AI,
+            developer tools, and creating meaningful user experiences—and I’m
+            always excited to learn, build, and contribute in fast-paced,
+            product-driven teams. Let's Connect!
           </h2>
           <div className="social-buttons">
             <a

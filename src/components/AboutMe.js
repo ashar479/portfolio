@@ -11,20 +11,32 @@ import Chatgpt from './images_tools/chatgpt.svg';
 import Jira from './images_tools/jira.svg';
 import ReactNative from './images_tools/react_native.webp';
 import Junit from './images_tools/junit5.svg';
-import Ant from './images_tools/ant.svg';
-import Taiga from './images_tools/taiga.svg';
 import Scrum from './images_tools/scrum.svg';
-import Heroku from './images_tools/heroku.svg';
 import Docker from './images_tools/docker.svg';
-import Cucumber from './images_tools/cucumber.svg';
-import Unity from './images_tools/Unity.jpg';
-import Protege from './images_tools/protege.png';
-import Sparql from './images_tools/sparql.webp';
-import Graphdb from './images_tools/GraphDB.webp';
-import Maven from './images_tools/maven.png';
-import Gradle from './images_tools/gradle.jpg';
-import Wireshark from './images_tools/wireshark.png';
 import Huggingface from './images_tools/hugging_face.png';
+
+import AWS from './images_tools/AWS.svg';
+// import Maven from './images_tools/maven.png';
+import Jenkins from './images_tools/Jenkins.svg';
+// import Gradle from './images_tools/gradle.jpg';
+import REST from './images_tools/REST.svg';
+// import Wireshark from './images_tools/wireshark.png';
+import Selenium from './images_tools/Selenium.svg';
+// import Protege from './images_tools/protege.png';
+import Grafana from './images_tools/Grafana.svg';
+// import Sparql from './images_tools/sparql.webp';
+import Python from './images_tools/Python.svg';
+// import Graphdb from './images_tools/GraphDB.webp';
+import Vercel from './images_tools/Vercel.svg';
+// import Unity from './images_tools/Unity.jpg';
+import Salesforce from './images_tools/Salesforce.svg';
+// import Taiga from './images_tools/taiga.svg';
+import Postman from './images_tools/Postman.svg';
+// import Heroku from './images_tools/heroku.svg';
+import Swagger from './images_tools/Swagger.svg';
+// import Ant from './images_tools/ant.svg';
+import Figma from './images_tools/Figma.svg';
+// import Cucumber from './images_tools/cucumber.svg';
 
 const AboutMe = ({ isDarkMode, id }) => {
   const [showButtons, setShowButtons] = useState([]);
@@ -63,42 +75,50 @@ const AboutMe = ({ isDarkMode, id }) => {
     >
       <h2>About Me</h2>
       <p>
-        I am a passionate software engineer with a keen interest in machine
-        learning and full-stack development. Currently pursuing Master's degree
-        in Software Engineering at Arizona State University, I have hands-on
-        experience with various technologies and frameworks such as React.js,
-        and TensorFlow.
+        I'm a Software Engineer with experience across fast-paced startups and
+        research-driven environments. At EyCrowd, I contributed to AI-powered
+        mobile features using React Native, supported Salesforce-based CRM
+        workflows, and helped optimize user engagement using analytics tools
+        like Mixpanel. At RoundTechSquare, I worked on building scalable
+        cloud-native platforms with React.js, Spring Boot, and AWS services,
+        while streamlining deployments using Jenkins and GitHub Actions. These
+        experiences taught me to balance speed with quality in high-impact,
+        cross-functional teams.
       </p>
       <p>
-        Outside of coding, I enjoy reading about new technologies, exploring
-        nature, and playing guitar. I am enthusiastic about learning and always
-        eager to take on new challenges in the field of software engineering. I
-        also love participating in competitive programming.
+        Beyond internships, I’ve led a Scrum-based software project in graduate
+        school where we transitioned legacy systems to agile workflows and
+        achieved high test coverage. I also authored a research paper on deep
+        learning-based traffic detection, which was published at an IEEE
+        conference. These opportunities have strengthened both my technical
+        depth and my ability to communicate complex ideas clearly across teams.
       </p>
       <h2>Tools and Frameworks</h2>
       <p>
-        In my past project experiences, I’ve leveraged a robust set of tools and
-        technologies to deliver efficient and high-quality solutions. Java has
-        been central to developing scalable applications, paired with frameworks
-        like JUnit 5 and Cucumber to implement Test-Driven Development (TDD) and
-        Behavior-Driven Development (BDD) practices. For front-end and mobile
-        development, I’ve utilized React.js and React Native to craft dynamic
-        user interfaces, ensuring responsiveness and cross-platform
-        compatibility. Tools like Docker and Heroku have enabled seamless
-        containerization and deployment, making applications accessible and
-        scalable. I’ve employed MySQL for database management, while Wireshark
-        was instrumental in analyzing and optimizing network performance. For
-        project management, Jira, Taiga, and Scrum methodologies have ensured
-        organized workflows and team efficiency. In deep learning and AI,
-        TensorFlow and pre-trained models from Hugging Face have been key for
-        building intelligent solutions. I’ve also explored GraphDB and SPARQL
-        for semantic web projects, using Protege to design ontologies. Tools
-        like Maven, Gradle, and Apache Ant have streamlined project builds and
-        dependency management. Additionally, I’ve leveraged Unity Hub for game
-        programming and ChatGPT to optimize workflows through automation and
-        idea generation. These tools collectively empower me to deliver
-        impactful software solutions across web, mobile, AI, and semantic web
-        domains.
+        My tech toolkit spans a wide range of modern web and software
+        development technologies. On the front end, I have experience building
+        responsive, component-driven interfaces using React, Next.js,
+        TypeScript, and React Native, ensuring cross-platform performance and
+        accessibility. On the backend, I’ve worked with Node.js, Java (Spring
+        Boot), Python, and FastAPI, developing RESTful APIs, microservices, and
+        scalable server-side logic.
+      </p>
+      <p>
+        For databases, I’m proficient with both SQL and NoSQL systems, having
+        worked with PostgreSQL, MongoDB, and Amazon DynamoDB. I use Git and
+        GitHub for version control, and have implemented CI/CD pipelines using
+        Jenkins and GitHub Actions to ensure smooth, automated deployments. I’ve
+        also deployed and managed applications using Vercel, and documented APIs
+        with Swagger and tested them with Postman.
+      </p>
+      <p>
+        In QA and testing, I’ve used JUnit5, JaCoCo, Selenium, and Mocha to
+        ensure code reliability and coverage. Additionally, I’ve integrated
+        Mixpanel for user behavior analytics, n8n for workflow automation, and
+        collaborated on product design using Figma and Monday.com. This broad
+        experience allows me to work effectively across the full software
+        development lifecycle—from prototyping and testing to deployment and
+        optimization.
       </p>
       <div className={`button-group ${showButtons[0] ? 'show' : ''}`}>
         <button
@@ -139,14 +159,13 @@ const AboutMe = ({ isDarkMode, id }) => {
       </div>
       <div className={`button-group ${showButtons[1] ? 'show' : ''}`}>
         <button
-          title="Cucumber Test Framework"
-          onClick={() =>
-            window.open('https://cucumber.io/docs/cucumber/', '_blank')
-          }
+          title="AWS"
+          onClick={() => window.open('https://aws.amazon.com/', '_blank')}
         >
-          <img src={Cucumber} alt="" />
-          Cucumber
+          <img src={AWS} alt="" />
+          Amazan Web Services
         </button>
+
         <button
           title="React.js Framework"
           onClick={() => window.open('https://reactjs.org/', '_blank')}
@@ -154,13 +173,15 @@ const AboutMe = ({ isDarkMode, id }) => {
           <img src={ReactLogo} alt="" />
           React.js
         </button>
+
         <button
-          title="Ant Framework"
-          onClick={() => window.open('https://ant.apache.org/', '_blank')}
+          title="Jenkins"
+          onClick={() => window.open('https://www.jenkins.io/', '_blank')}
         >
-          <img src={Ant} alt="" />
-          Apache Ant
+          <img src={Jenkins} alt="" />
+          Jenkins
         </button>
+
         <button
           title="React Native for Mobile Development"
           onClick={() => window.open('https://reactnative.dev/', '_blank')}
@@ -175,7 +196,7 @@ const AboutMe = ({ isDarkMode, id }) => {
           onClick={() => window.open('https://junit.org/junit5/', '_blank')}
         >
           <img src={Junit} alt="" />
-          Junit Jupiter (Junit 5)
+          Junit 5
         </button>
         <button
           title="Tensorflow for ML"
@@ -191,12 +212,13 @@ const AboutMe = ({ isDarkMode, id }) => {
           <img src={Docker} alt="" />
           Docker
         </button>
+
         <button
-          title="Heroku"
-          onClick={() => window.open('https://www.heroku.com/', '_blank')}
+          title="REST"
+          onClick={() => window.open('https://restfulapi.net/', '_blank')}
         >
-          <img src={Heroku} alt="" />
-          Heroku
+          <img src={REST} alt="" />
+          RESTful APIs
         </button>
       </div>
       <div className={`button-group ${showButtons[3] ? 'show' : ''}`}>
@@ -207,13 +229,15 @@ const AboutMe = ({ isDarkMode, id }) => {
           <img src={Git} alt="" />
           Git
         </button>
+
         <button
-          title="Taiga.io for Scrum"
-          onClick={() => window.open('https://www.taiga.io/', '_blank')}
+          title="Selenium"
+          onClick={() => window.open('https://www.selenium.dev/', '_blank')}
         >
-          <img src={Taiga} alt="" />
-          Taiga.io
+          <img src={Selenium} alt="" />
+          Selenium
         </button>
+
         <button
           title="Scrum Development"
           onClick={() =>
@@ -231,46 +255,52 @@ const AboutMe = ({ isDarkMode, id }) => {
           MySql
         </button>
       </div>
+
       <div className={`button-group ${showButtons[4] ? 'show' : ''}`}>
         <button
-          title="Unity Hub"
-          onClick={() => window.open('https://unity.com/', '_blank')}
+          title="Grafana"
+          onClick={() => window.open('https://grafana.com/', '_blank')}
         >
-          <img src={Unity} alt="" />
-          Unity 5
+          <img src={Grafana} alt="" />
+          Grafana
         </button>
+
         <button
-          title="Ontotext GraphDb"
-          onClick={() => window.open('https://graphdb.ontotext.com/', '_blank')}
+          title="Python"
+          onClick={() => window.open('https://www.python.org/', '_blank')}
         >
-          <img src={Graphdb} alt="" />
-          GraphDb
+          <img src={Python} alt="" />
+          Python
         </button>
+
         <button
-          title="Sparql Document"
-          onClick={() =>
-            window.open('https://www.w3.org/TR/sparql11-query/', '_blank')
-          }
+          title="Vercel"
+          onClick={() => window.open('https://www.vercel.com/', '_blank')}
         >
-          <img src={Sparql} alt="" />
-          SPARQL
+          <img src={Vercel} alt="" />
+          Vercel
         </button>
+
         <button
-          title="Protege by Stanford"
-          onClick={() => window.open('https://protege.stanford.edu/', '_blank')}
+          title="Salesforce"
+          onClick={() => window.open('https://www.salesforce.com/', '_blank')}
         >
-          <img src={Protege} alt="" />
-          Protege
+          <img src={Salesforce} alt="" />
+          Salesforce
         </button>
       </div>
+
       <div className={`button-group ${showButtons[5] ? 'show' : ''}`}>
         <button
-          title="Wireshark Network Packet Sniffing"
-          onClick={() => window.open('https://www.wireshark.org/', '_blank')}
+          title="Postman"
+          onClick={() =>
+            window.open('https://www.postman.com/legal/logo-usage/', '_blank')
+          }
         >
-          <img src={Wireshark} alt="" />
-          Wireshark
+          <img src={Postman} alt="" />
+          Postman
         </button>
+
         <button
           title="HuggingFace for Ai/ML"
           onClick={() => window.open('https://huggingface.co/', '_blank')}
@@ -278,19 +308,21 @@ const AboutMe = ({ isDarkMode, id }) => {
           <img src={Huggingface} alt="" />
           HuggingFace
         </button>
+
         <button
-          title="Java Maven Framework"
-          onClick={() => window.open('https://maven.apache.org/', '_blank')}
+          title="Figma"
+          onClick={() => window.open('https://www.figma.com/', '_blank')}
         >
-          <img src={Maven} alt="" />
-          Maven
+          <img src={Figma} alt="" />
+          Figma
         </button>
+
         <button
-          title="Java Gradle Framework"
-          onClick={() => window.open('https://gradle.org/', '_blank')}
+          title="Swagger"
+          onClick={() => window.open('https://swagger.io/docs/', '_blank')}
         >
-          <img src={Gradle} alt="" />
-          Gradle
+          <img src={Swagger} alt="" />
+          Swagger
         </button>
       </div>
     </section>
