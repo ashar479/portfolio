@@ -95,8 +95,8 @@ const Footer = () => {
         <div className="info-section">
           <div>
             <h3>Address</h3>
-            <p>1221 E Broadway Rd, Apt. 2068</p>
-            <p>Tempe, Arizona, United States - 85282</p>
+            <p>1831 E Apache Blvd, Apt. B-3076</p>
+            <p>Tempe, Arizona, United States - 85281</p>
           </div>
           <div>
             <h3>Social Media</h3>
