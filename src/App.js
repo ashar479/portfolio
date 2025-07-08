@@ -15,6 +15,7 @@ import Yolo from './components/YOLO/Yolo';
 import Game from './components/Game/Game';
 import Android from './components/Android/Android';
 import Scrum from './components/Scrum/Scrum';
+import ChatbotWidget from './components/ChatbotWidget';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -88,6 +89,7 @@ const App = () => {
                   isDarkMode={isDarkMode}
                   id="publications"
                 />
+                <ChatbotWidget />
               </div>
             </MainLayout>
           }
