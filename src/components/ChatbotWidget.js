@@ -28,7 +28,7 @@ const ChatbotWidget = () => {
 
     try {
       const response = await fetch(
-        'https://<your-render-url>.onrender.com/ask',
+        'https://portfolio-backend-4mjc.onrender.com',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
