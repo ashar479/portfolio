@@ -87,11 +87,11 @@
 
 /* Dark mode styles */
 .dark-mode .work {
-  background-color: #444444;
+  background-color: #9a9a9ae3;
 }
 
 .dark-mode .work h2 {
-  color: rgb(219, 219, 219);
+  color: #e6e6e6ba;
 }
 
 .dark-mode .timeline-item::before {

@@ -5,7 +5,7 @@
   width: auto;
   height: auto;
   text-align: left;
-  background-color: rgba(197, 200, 201, 0.798);
+  background-color: rgba(243, 245, 246, 0.798);
 }
 
 .education h2 {
@@ -39,14 +39,26 @@
 
 /* Dark mode styles */
 .dark-mode .education {
-  background-color: #444444;
+  background-color: #919191d5;
 }
 
 .dark-mode .education h2,
 .dark-mode .education h3,
 .dark-mode .education p,
 .dark-mode .education ul {
-  color: rgb(219, 219, 219);
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.dark-mode .resume-button button {
+  background-color: rgba(0, 0, 0, 0.596); /* Button color in dark mode */
+  color: #ffffff; /* Text color in dark mode */
+  border: 1px solid #ffffff;
+}
+
+.dark-mode .resume-button button:hover {
+  background-color: white; /* Button color in dark mode */
+  color: #000000; /* Text color in dark mode */
+  border: 1px solid #000000;
 }
 
 .resume-button {

@@ -44,27 +44,24 @@ const AboutMe = ({ isDarkMode, id }) => {
   useEffect(() => {
     const handleScroll = () => {
       const buttonGroups = document.querySelectorAll('.button-group');
-      if (buttonGroups.length > 0) {
-        buttonGroups.forEach((group, index) => {
-          const { scrollTop, clientHeight } =
-            document.documentElement || document.body;
+      const newStates = [];
 
-          // Only proceed if the group element exists
-          if (group) {
-            const triggerPosition =
-              group.offsetTop + group.clientHeight / 1 + 350;
+      buttonGroups.forEach((group) => {
+        const rect = group.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight - 150;
+        newStates.push(isVisible);
+      });
 
-            setShowButtons((prevState) => {
-              const updatedState = [...prevState];
-              updatedState[index] = scrollTop + clientHeight > triggerPosition;
-              return updatedState;
-            });
-          }
-        });
-      }
+      setShowButtons((prevState) => {
+        if (JSON.stringify(prevState) !== JSON.stringify(newStates)) {
+          return newStates;
+        }
+        return prevState;
+      });
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check on mount
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -163,7 +160,7 @@ const AboutMe = ({ isDarkMode, id }) => {
           onClick={() => window.open('https://aws.amazon.com/', '_blank')}
         >
           <img src={AWS} alt="" />
-          Amazan Web Services
+          Amazon Web Services
         </button>
 
         <button

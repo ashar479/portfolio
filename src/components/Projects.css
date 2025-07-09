@@ -133,11 +133,11 @@
 
 /* Dark mode styles */
 .dark-mode .projects {
-  background-color: #444;
+  background-color: #919191d5;
 }
 
 .dark-mode .projects h2 {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.54);
 }
 
 .dark-mode .project-overlay {

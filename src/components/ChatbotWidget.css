@@ -49,6 +49,17 @@
   text-overflow: ellipsis;
 }
 
+.chatbot-title {
+  font-size: 10pt;
+  margin-top: 0%;
+}
+
+.chatbot-title-p {
+  font-size: 10pt;
+  font-weight: 100;
+  font-style: italic;
+}
+
 .chatbot-header-actions {
   display: flex;
   gap: 8px;
@@ -111,7 +122,7 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   outline: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .chatbot-submit-button {
@@ -148,11 +159,11 @@
   }
 
   .chatbot-input {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .chatbot-submit-button {
-    font-size: 13px;
+    font-size: 14px;
     padding: 8px 12px;
   }
 }

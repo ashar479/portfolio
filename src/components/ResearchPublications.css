@@ -29,13 +29,13 @@
 
 /* Dark mode styles */
 .dark-mode .research-publications {
-  background-color: #444444;
+  background-color: #939393c6;
 }
 
 .dark-mode .research-publications h2,
 .dark-mode .research-publications .publication-entry h3,
 .dark-mode .research-publications .publication-entry p {
-  color: rgb(219, 219, 219);
+  color: rgb(202, 202, 202);
 }
 
 /* Media Query for smaller screens */

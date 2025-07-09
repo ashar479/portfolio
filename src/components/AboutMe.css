@@ -25,11 +25,11 @@
 
 /* Dark mode styles */
 .about-me.dark-mode {
-  background-color: #e0e0e0; /* Dark mode background color */
+  background-color: #9a9a9ae3; /* Dark mode background color */
 }
 
 .about-me.dark-mode p {
-  color: #000000; /* Dark mode paragraph text color */
+  color: #e6e6e6ba; /* Dark mode paragraph text color */
 }
 
 /* Button styles */
@@ -40,8 +40,10 @@
   width: 100%;
   height: auto;
   margin-bottom: 1%; /* Increase margin between button groups */
-  transition: transform 1s ease; /* Add transition effect */
-  transform: translateY(500%); /* Initial position */
+  transform: translateY(100%);
+  transition: transform 0.5s ease-out;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .button-group.show {
