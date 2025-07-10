@@ -11,12 +11,47 @@
   right: 24px;
   background-color: #ffbf00a0;
   border: none;
-  padding: 12px;
-  border-radius: 50%;
+  border-radius: 24px;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   color: white;
   z-index: 1000;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.3s ease;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 8px;
+  direction: rtl; /* flips visual flow so KnowBee appears on left of 🐝 */
+}
+
+.chatbot-toggle-button:hover {
+  width: 140px;
+  background-color: #ffbf00cc; /* slightly more transparent */
+}
+
+.bee-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  direction: ltr;
+}
+
+.knowbee-label {
+  font-size: 14px;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s ease;
+  direction: ltr;
+}
+
+.chatbot-toggle-button:hover .knowbee-label {
+  font-weight: bold;
+  opacity: 1;
 }
 
 .chatbot-box {

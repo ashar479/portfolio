@@ -1,7 +1,6 @@
 // ChatbotWidget.js
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageSquare } from 'lucide-react';
 import './ChatbotWidget.css';
 
 const ChatbotWidget = () => {
@@ -81,7 +80,7 @@ const ChatbotWidget = () => {
             className="chatbot-box"
           >
             <div className="chatbot-header">
-              <span className="chatbot-title-text">Ask KnowBi</span>
+              <span className="chatbot-title-text">Ask KnowBee 🐝</span>
               <div className="chatbot-header-actions">
                 <button className="chatbot-header-button" onClick={handleClear}>
                   Clear
@@ -108,7 +107,7 @@ const ChatbotWidget = () => {
               {messages.length === 0 && (
                 <div>
                   <h1 className="chatbot-title">
-                    🌟 Hi there! I’m KnowBi — your cheerful AI guide to Ansh
+                    🌟 Hi there! I’m KnowBee — your cheerful AI guide to Ansh
                     Sharma! I’m here to share insights about his background,
                     skills, and projects. Whether it's his education, tools he
                     uses, or cool things he’s built — I’ve got the scoop! 💬🤖
@@ -150,7 +149,8 @@ const ChatbotWidget = () => {
           onClick={toggleChat}
           className="chatbot-toggle-button"
         >
-          <MessageSquare size={24} />
+          <span className="knowbee-label">KnowBee</span>
+          <span className="bee-icon">🐝</span>
         </motion.button>
       )}
     </div>

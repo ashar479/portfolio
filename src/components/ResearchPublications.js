@@ -8,6 +8,37 @@ const ResearchPublications = ({ id, isDarkMode }) => {
       id={id}
       className={`research-publications ${isDarkMode ? 'dark-mode' : ''}`}
     >
+      <h2>Social Volunteer Work</h2>
+      <div className="publication-entry">
+        <h3>Special Education Teacher @EklavyaNGO</h3>
+
+        <p>
+          <a
+            title="Eklavya NGO"
+            href="https://www.linkedin.com/company/eklavya-trust/posts/?feedView=all"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Eklavya NGO
+          </a>
+        </p>
+        <p>
+          <ul>
+            <li>Nov2021 to Jan2022</li>
+            <li>
+              At Eklavya NGO in Delhi, I taught underprivileged students core
+              Computer Science concepts, basic programming, and API development.
+              I designed a structured curriculum focused on practical skills and
+              real-world applications to empower long-term learning. Through
+              mentorship and hands-on training, I helped students build a strong
+              foundation for future opportunities in technology.
+            </li>
+          </ul>
+        </p>
+      </div>
+
+      <div style={{ padding: '16px' }} />
+
       <h2>Research Publication</h2>
       <div className="publication-entry">
         <h3>
