@@ -81,7 +81,7 @@ const ChatbotWidget = () => {
             className="chatbot-box"
           >
             <div className="chatbot-header">
-              <span className="chatbot-title-text">Ask QuantaBOT</span>
+              <span className="chatbot-title-text">Ask KnowBi</span>
               <div className="chatbot-header-actions">
                 <button className="chatbot-header-button" onClick={handleClear}>
                   Clear
@@ -108,24 +108,21 @@ const ChatbotWidget = () => {
               {messages.length === 0 && (
                 <div>
                   <h1 className="chatbot-title">
-                    Hello! I'm Ansh's AI assistant, QuantaBOT 🤖. Feel free to
-                    ask me anything about his background, skills, or projects.
+                    🌟 Hi there! I’m KnowBi — your cheerful AI guide to Ansh
+                    Sharma! I’m here to share insights about his background,
+                    skills, and projects. Whether it's his education, tools he
+                    uses, or cool things he’s built — I’ve got the scoop! 💬🤖
                   </h1>
                   <p className="chatbot-title-p">
-                    🧑🏽‍💻 I can explain Ansh’s technical skills, including the
-                    tools, languages, and frameworks he works with.
+                    🧑🏽‍💻 I can walk you through Ansh’s technical skills and
+                    frameworks.
                   </p>
                   <p className="chatbot-title-p">
-                    🎉 I’ll walk you through Ansh’s professional experience and
-                    key projects he’s built or contributed to.
+                    🎉 I’ll highlight his work experience and notable projects.
                   </p>
                   <p className="chatbot-title-p">
-                    🧠 I’m here to help recruiters, collaborators, and curious
-                    minds like you to understand what Ansh brings to the table.
-                  </p>
-                  <p className="chatbot-title-p">
-                    ✅ I aim to make this feel like you're chatting directly
-                    with Ansh.
+                    🧠 I’m here to help you get to know what Ansh brings to the
+                    table.
                   </p>
                 </div>
               )}
