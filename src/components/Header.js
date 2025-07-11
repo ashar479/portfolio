@@ -86,8 +86,8 @@ const Header = ({ onToggleDarkMode, isDarkMode, activeSection }) => {
           fontWeight: '500',
           cursor: 'pointer',
           marginTop: '49pt',
-          position: 'fixed',
-          zIndex: 1000,
+          position: 'relative',
+          zIndex: 0,
           color: 'white',
         }}
         onClick={() =>
