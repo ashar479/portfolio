@@ -127,6 +127,7 @@
 }
 
 .chatbot-message {
+  font-family: system-ui, 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
   margin-bottom: 8px;
   padding: 8px 12px;
   border-radius: 12px;
@@ -153,6 +154,45 @@
   border: 2px solid transparent;
   background-clip: padding-box;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+.chatbot-message h1,
+.chatbot-message h2,
+.chatbot-message h3,
+.chatbot-message h4,
+.chatbot-message h5,
+.chatbot-message h6 {
+  font-size: 14px; /* Same as your base text */
+  font-weight: bold;
+  margin: 0 0 6px 0;
+}
+
+.chatbot-message p {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.566);
+}
+
+.chatbot-message strong {
+  font-weight: 900;
+}
+
+.chatbot-message a {
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.chatbot-message ul,
+.chatbot-message ol {
+  padding-left: 1.25rem;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.chatbot-message li {
+  margin-bottom: 4px;
 }
 
 .chatbot-message.bot::before {

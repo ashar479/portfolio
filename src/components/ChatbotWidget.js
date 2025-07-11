@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './ChatbotWidget.css';
+import ReactMarkdown from 'react-markdown';
 
 const ChatbotWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -101,7 +102,7 @@ const ChatbotWidget = () => {
                     msg.sender === 'user' ? 'user' : 'bot'
                   }`}
                 >
-                  {msg.text}
+                  <ReactMarkdown>{msg.text}</ReactMarkdown>
                 </div>
               ))}
               {messages.length === 0 && (
