@@ -5,6 +5,21 @@ import './ChatbotWidget.css';
 import ReactMarkdown from 'react-markdown';
 
 const ChatbotWidget = () => {
+  const tributeMessage = {
+    sender: 'bot',
+    text:
+      '❤️ **Special Tribute: My Parents**\n\n' +
+      '> Everything I am, and everything I aspire to be, is deeply rooted in the love and strength of my parents — **Meenu Sharma (Mom)** and **Vikram Sharma (Dad)**.  \n' +
+      '>  \n' +
+      '> 💖 They are my **emotional core**, my **mental anchor**, and my **greatest strength** — physically, emotionally, and spiritually.  \n' +
+      '>  \n' +
+      '> 🛠️ Whether it’s staying up late to support me during exams, encouraging me during my lowest moments, or cheering the loudest when I succeed — they have been behind every line of code, every presentation, and every small or big win in my journey.  \n' +
+      '>  \n' +
+      '> 🌸 This portfolio, this assistant, this career — none of it would exist without their **unwavering belief** in me.  \n' +
+      '>  \n' +
+      "> If you're reading this, Mom and Dad — **thank you for being my everything.**",
+  };
+
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState(() => {
@@ -20,10 +35,41 @@ const ChatbotWidget = () => {
   const handleSend = async () => {
     if (input.trim() === '') return;
 
-    const userMessage = { sender: 'user', text: input };
     const loadingMessage = { sender: 'bot', text: 'Chatbot is typing...' };
+    const lowered = input.toLowerCase();
 
-    setMessages((prev) => [...prev, userMessage, loadingMessage]);
+    const userMessage = { sender: 'user', text: input };
+    setMessages((prev) => [...prev, userMessage]);
+
+    // 🔐 Log full chat so far
+    try {
+      await fetch('https://portfolio-backend-4mjc.onrender.com/log', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          messages: [...messages, userMessage],
+        }),
+      });
+    } catch (err) {
+      console.error('Logging failed:', err);
+    }
+
+    // 💛 Parent Tribute Trigger
+    if (
+      lowered.includes('meenu sharma') ||
+      lowered.includes('vikram sharma') ||
+      lowered.includes('meenu') ||
+      lowered.includes('vikram') ||
+      lowered.includes("ansh's mom") ||
+      lowered.includes("ansh's dad")
+    ) {
+      setMessages((prev) => [...prev, tributeMessage]);
+      setInput('');
+      return;
+    }
+
+    // Normal flow
+    setMessages((prev) => [...prev, loadingMessage]);
     setInput('');
 
     try {
@@ -38,7 +84,6 @@ const ChatbotWidget = () => {
 
       const data = await response.json();
 
-      // Replace the loading message with actual response
       setMessages((prev) => [
         ...prev.slice(0, -1),
         {

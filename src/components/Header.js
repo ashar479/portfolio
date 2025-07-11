@@ -80,7 +80,7 @@ const Header = ({ onToggleDarkMode, isDarkMode, activeSection }) => {
       </header>
       <div
         style={{
-          backgroundColor: 'rgba(255, 215, 0, 0.75)',
+          backgroundColor: 'rgba(255, 215, 0, 0.65)',
           padding: '8px 16px',
           textAlign: 'center',
           fontWeight: '500',
@@ -88,7 +88,8 @@ const Header = ({ onToggleDarkMode, isDarkMode, activeSection }) => {
           marginTop: '49pt',
           position: 'relative',
           zIndex: 0,
-          color: 'white',
+          color: 'rgba(104, 104, 104, 0.6)',
+          textDecoration: 'underline',
         }}
         onClick={() =>
           window.open(
