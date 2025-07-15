@@ -36,7 +36,7 @@
   display: block;
   border-radius: 12px;
   object-fit: cover;
-  filter: blur(10px); /* Initial blur effect */
+  /* filter: blur(10px); Initial blur effect */
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 

@@ -4,6 +4,14 @@ import './Education.css';
 import Transcript from './images/Latest_Transcript_ASU.pdf';
 import ResumePopup from './ResumePopup';
 
+import CSE565 from './docs/cse565.pdf';
+import CSE575 from './docs/cse575.pdf';
+import SER423 from './docs/ser423.pdf';
+import SER501 from './docs/ser501.pdf';
+import SER502 from './docs/ser502.pdf';
+import SER531 from './docs/ser531.pdf';
+import SER594 from './docs/ser594.pdf';
+
 const Education = ({ id, isDarkMode }) => {
   const [showTranscriptPopup, setShowTranscriptPopup] = useState(false);
 
@@ -27,7 +35,7 @@ const Education = ({ id, isDarkMode }) => {
           <li>
             <a
               title="ASU SER501"
-              href="https://webapp4.asu.edu/bookstore/viewsyllabus/2207/75491"
+              href={SER501}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -37,7 +45,7 @@ const Education = ({ id, isDarkMode }) => {
           <li>
             <a
               title="ASU SER502"
-              href="https://webapp4.asu.edu/bookstore/viewsyllabus/2201/14866"
+              href={SER502}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,7 +65,7 @@ const Education = ({ id, isDarkMode }) => {
           <li>
             <a
               title="ASU SER423"
-              href="https://webapp4.asu.edu/bookstore/viewsyllabus/2171/17594"
+              href={SER423}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,7 +75,7 @@ const Education = ({ id, isDarkMode }) => {
           <li>
             <a
               title="ASU CSE565"
-              href="https://webapp4.asu.edu/bookstore/viewsyllabus/2227/75638"
+              href={CSE565}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -77,7 +85,7 @@ const Education = ({ id, isDarkMode }) => {
           <li>
             <a
               title="ASU SER531"
-              href="https://webapp4.asu.edu/bookstore/viewsyllabus/2237/80010/pdf;jsessionid=CE9E96B5C7E5CCB56A44AAB105502482"
+              href={SER531}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -87,7 +95,7 @@ const Education = ({ id, isDarkMode }) => {
           <li>
             <a
               title="ASU CSE575"
-              href="https://webapp4.asu.edu/bookstore/viewsyllabus/2201/32230/pdf;jsessionid=168F7333012A202A897151660BF50A4B"
+              href={CSE575}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -97,7 +105,7 @@ const Education = ({ id, isDarkMode }) => {
           <li>
             <a
               title="ASU SER594/494"
-              href="https://webapp4.asu.edu/bookstore/viewsyllabus/2247/77774/pdf;jsessionid=57812C65EB3135713E57895C9F9A80F9"
+              href={SER594}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -106,16 +114,7 @@ const Education = ({ id, isDarkMode }) => {
           </li>
 
           {/*  */}
-          <li>
-            <a
-              title="ASU SER566"
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Software Project, Process and Quality Management (SER566)
-            </a>
-          </li>
+          <li>Software Project, Process and Quality Management (SER566)</li>
           <li>
             <a
               title="ASU SER517"
