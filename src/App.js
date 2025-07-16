@@ -17,6 +17,8 @@ import Android from './components/Android/Android';
 import Scrum from './components/Scrum/Scrum';
 import ChatbotWidget from './components/ChatbotWidget';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AlignedRewards from './components/AlignedRewards/AlignedRewards';
+import Naav from './components/Naav/Naav';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -102,6 +104,8 @@ const App = () => {
         <Route path="/yolo" element={<Yolo />} />
         <Route path="/nst" element={<Nst />} />
         <Route path="/android" element={<Android />} />
+        <Route path="/aligned_rewards" element={<AlignedRewards />} />
+        <Route path="/naav" element={<Naav />} />
       </Routes>
     </Router>
   );

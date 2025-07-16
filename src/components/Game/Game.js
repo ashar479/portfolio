@@ -1,22 +1,22 @@
 import React from 'react';
 import './Game.css';
-import MainMenu from './Main_Menu.png';
-import UI from './UI.png';
-import Kill from './Kill.png';
-import Task1 from './Task1.png';
-import Task2 from './Task2.png';
-import Code from './Code.png';
+// import MainMenu from './Main_Menu.png';
+// import UI from './UI.png';
+// import Movement from './Kill.png';
+// import Task1 from './Task1.png';
+// import Task2 from './Task2.png';
+// import Code from './Code.png';
 
 const Game = () => {
   return (
     <div className="game-container">
       {/* Header Section */}
       <header className="game-header">
-        <h1>Deception 3Dee - Killer in Disguise</h1>
+        <h1>Ansh's 3D Simulator</h1>
         <p>
-          A thrilling multiplayer game that combines teamwork and suspense as
-          Campus Keepers face off against a covert killer disguised in their
-          midst.
+          Immerse yourself as a third-person player in a vibrant 3D environment.
+          Explore, interact, and complete challenges in this Unity-powered
+          simulation game.
         </p>
       </header>
 
@@ -24,80 +24,90 @@ const Game = () => {
       <section className="game-overview">
         <h2>Project Overview</h2>
         <p>
-          Deception 3Dee is a social deduction game set in a futuristic Poly
-          campus. Players work together as Campus Keepers to complete tasks
-          while a disguised killer, Dee, sabotages and eliminates them. The game
-          leverages teamwork, strategic deception, and immersive gameplay for an
-          engaging experience.
+          Ansh's 3D Simulator puts you in control of a third-person character,
+          encouraging exploration and interaction within a dynamic virtual
+          world. Navigate diverse landscapes, complete various interactive
+          tasks, and experience smooth controls and camera systems designed for
+          intuitive gameplay.
         </p>
       </section>
 
-      {/* Images and Details */}
+      {/* Images and Details
       <section className="game-gallery">
         <div className="gallery-item">
           <h3>Main Menu</h3>
           <img src={MainMenu} alt="Main Menu" />
           <p>
-            The starting screen where players can choose game modes or set up
-            matches.
+            The entry point for players to start a new simulation or load
+            existing scenarios.
           </p>
         </div>
         <div className="gallery-item">
-          <h3>Gameplay User Interface</h3>
+          <h3>User Interface</h3>
           <img src={UI} alt="Gameplay UI" />
           <p>
-            The intuitive UI ensures players can navigate tasks and interactions
-            smoothly.
+            A clean and intuitive UI makes navigation and interaction simple and
+            enjoyable.
           </p>
         </div>
         <div className="gallery-item">
-          <h3>Kill Mechanics</h3>
-          <img src={Kill} alt="Kill Animation" />
+          <h3>Character Movement</h3>
+          <img src={Movement} alt="Character Movement" />
           <p>
-            Dee strategically eliminates Campus Keepers without being caught.
+            Control your third-person character with responsive movement, camera
+            angles, and physics-based interactions.
           </p>
         </div>
         <div className="gallery-item">
-          <h3>Task Management - Wiring</h3>
+          <h3>Interactive Task: Wiring</h3>
           <img src={Task1} alt="Wiring Task" />
           <p>
-            Players work together to complete challenging tasks, such as wiring
-            systems.
+            Engage with interactive elements such as wiring systems to complete
+            objectives.
           </p>
         </div>
         <div className="gallery-item">
-          <h3>Task Management - Control Panel</h3>
+          <h3>Interactive Task: Control Panel</h3>
           <img src={Task2} alt="Control Panel Task" />
           <p>
-            Interactive tasks like control panel management add to the game’s
-            complexity.
+            Tackle tasks like control panel operations, adding variety and depth
+            to the simulation.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Code Section */}
       <section className="game-code">
         <h2>Code Preview</h2>
-        <img src={Code} alt="Code Screenshot" />
+        {/* <img src={Code} alt="Code Screenshot" /> */}
         <p>
-          The game leverages Unity and C# for physics-based interactions,
-          character control, and game mechanics like sabotage, elimination, and
-          task completion.
+          The simulator is built using Unity and C#, featuring advanced
+          mechanics for character control, camera movement, and interactive
+          systems.
         </p>
         <a
-          title="Source Code to run the game"
-          href="https://drive.google.com/file/d/1ke0mbdRdWXq80nE_46xhMEWD0xo5Wn2n/view?usp=sharing"
+          title="Play Game"
+          href="https://anshsharma120601.itch.io/3d-simulator-ansh"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-link"
         >
-          Download Game...
+          Play Game...
+        </a>
+        <a
+          title="Source Code to run the game"
+          href="https://github.com/ashar479/game_development"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-link"
+        >
+          Codebase
         </a>
       </section>
 
       {/* Footer Section */}
       <footer className="game-footer">
-        <p>© 2024 Deception 3Dee | Created by [Your Team Name]</p>
+        <p>© 2024 Ansh's 3D Simulator | Created by Ansh Sharma</p>
       </footer>
     </div>
   );

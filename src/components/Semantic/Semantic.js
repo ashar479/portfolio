@@ -154,7 +154,7 @@ const Semantic = () => {
             </p>
             <a
               title="Project Demo"
-              href="https://youtu.be/vsOfqYMOX8A"
+              href="https://www.youtube.com/watch?v=-u9FA-o7dz0"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-link"

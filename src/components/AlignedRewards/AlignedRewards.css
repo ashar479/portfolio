@@ -1,0 +1,266 @@
+html {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #c5c4ff 0%, #ffdfdf 100%);
+}
+
+.aligned-rewards-container {
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px #0002;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.ar-heading {
+  text-align: center;
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #264dbf;
+  letter-spacing: -1px;
+}
+
+.ar-overview {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: #3a4066;
+  font-size: 1.09rem;
+}
+
+.ar-overview p {
+  font-weight: 100;
+  font-size: larger;
+}
+
+.ar-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin: 2.5rem 0 2rem 0;
+  justify-content: center;
+}
+
+.ar-feature-card {
+  flex: 1;
+  min-width: 250px;
+  border-radius: 10px;
+  padding: 1.1rem 1rem;
+  box-shadow: 0 2px 8px #2a438818;
+  background: #fff;
+}
+
+.ar-feature-blue {
+  background: #e9f0fb;
+}
+.ar-feature-pink {
+  background: #f9e8fa;
+}
+
+.ar-feature-card h4 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.15rem;
+}
+
+.ar-section {
+  margin: 2.5rem 0 2rem 0;
+  justify-items: center;
+}
+
+.ar-section h2 {
+  color: #2348a5;
+  margin-bottom: 12px;
+}
+
+.ar-pdf {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.ar-pdf-scale-wrapper {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ar-pdf-scale-wrapper .ar-pdf {
+  transform: scale(0.7); /* Zoom out */
+  transform-origin: top left;
+  width: 140%; /* Widen so the scaled-down PDF is fully visible */
+  height: 600px; /* Taller so scaled content shows */
+  border: none;
+}
+
+.ar-documents {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 2.5rem 0;
+}
+
+.ar-doc-card {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 10px;
+  padding: 1.1rem 1rem;
+  box-shadow: 0 2px 8px #264dbf12;
+  background: #fff;
+}
+
+.ar-doc-blue {
+  background: #f6faff;
+}
+.ar-doc-pink {
+  background: #fdf8fa;
+}
+
+.ar-doc-card h3 {
+  margin: 0 0 0.7rem 0;
+  font-size: 1.15rem;
+}
+
+.ar-download-link {
+  margin-top: 8px;
+  text-align: center;
+}
+.ar-download-link a {
+  color: #264dbf;
+  font-weight: 600;
+  text-decoration: none;
+}
+.ar-download-link a:hover {
+  text-decoration: underline;
+}
+
+.ar-buttons {
+  text-align: center;
+  margin: 1.8rem 0;
+}
+.ar-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px #0001;
+  border: none;
+  margin: 0 0.7rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.18s;
+}
+
+.ar-btn-blue {
+  background: #2348a5;
+  color: #fff;
+}
+.ar-btn-blue:hover {
+  background: #436de5;
+}
+.ar-btn-pink {
+  background: #e54b62;
+  color: #fff;
+}
+.ar-btn-pink:hover {
+  background: #c03a4e;
+}
+
+/* ======================= */
+/* Responsive media queries*/
+/* ======================= */
+
+@media (max-width: 900px) {
+  .aligned-rewards-container {
+    max-width: 98vw;
+    padding: 2rem 0.7rem 1rem 0.7rem;
+  }
+  .ar-heading {
+    font-size: 2rem;
+  }
+  .ar-overview {
+    font-size: 1rem;
+  }
+  .ar-section {
+    margin: 2rem 0 1.4rem 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .ar-features,
+  .ar-documents {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .aligned-rewards-container {
+    max-width: 100vw;
+    padding: 1.1rem 0.2rem 0.7rem 0.2rem;
+  }
+  .ar-heading {
+    font-size: 1.52rem;
+    margin-top: 0.5rem;
+  }
+  .ar-feature-card,
+  .ar-doc-card {
+    min-width: unset;
+    padding: 0.85rem 0.8rem;
+  }
+  .ar-overview {
+    font-size: 0.97rem;
+    padding: 0 0.4rem;
+  }
+  .ar-section h2 {
+    font-size: 1.22rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .aligned-rewards-container {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0.7rem 0.08rem 0.1rem 0.08rem;
+  }
+  .ar-heading {
+    font-size: 1.08rem;
+    margin-top: 0.4rem;
+  }
+  .ar-overview,
+  .ar-section h2,
+  .ar-feature-card h4,
+  .ar-doc-card h3 {
+    font-size: 0.95rem;
+  }
+  .ar-feature-card,
+  .ar-doc-card {
+    border-radius: 6px;
+    padding: 0.6rem 0.55rem;
+  }
+  .ar-section {
+    margin: 1.1rem 0 0.7rem 0;
+  }
+  .ar-pdf-scale-wrapper {
+    height: 260px;
+  }
+  .ar-pdf-scale-wrapper .ar-pdf {
+    transform: scale(0.49);
+    width: 204%;
+    height: 400px;
+  }
+  .ar-buttons {
+    margin: 1rem 0;
+  }
+  .ar-btn {
+    font-size: 0.95rem;
+    padding: 0.45rem 0.7rem;
+    margin: 0 0.22rem 0.5rem 0;
+  }
+}

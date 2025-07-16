@@ -101,6 +101,15 @@ const Scrum = () => {
         >
           View on GitHub
         </a>
+        <a
+          title="Application"
+          href="https://www.dropbox.com/scl/fi/wdwf2ekudwn6p3tbcelgu/MyApp.jar?rlkey=uh07av340mru744ofamimh3nj&st=qictgpod&dl=0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-link"
+        >
+          Download App
+        </a>
       </section>
 
       {/* Footer Section */}
