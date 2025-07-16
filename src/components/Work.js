@@ -1,5 +1,8 @@
 import React from 'react';
 import './Work.css';
+import SER315 from './docs/SER315.pdf';
+import SER321 from './docs/SER321.pdf';
+import SER450 from './docs/SER450.pdf';
 
 const Work = ({ id, isDarkMode }) => {
   const workExperience = [
@@ -36,15 +39,15 @@ const Work = ({ id, isDarkMode }) => {
       courses: [
         {
           name: 'SER315: Software Design and Processes',
-          url: 'https://webapp4.asu.edu/bookstore/viewsyllabus/2227/77623/pdf;jsessionid=0244856FA63CAB798BADAAA3597600EE',
+          url: SER315,
         },
         {
           name: 'SER321: Principles of Distributed Software Systems',
-          url: 'https://webapp4.asu.edu/bookstore/viewsyllabus/2234/44671/pdf;jsessionid=C81BC4B51CABB6D128D01C3868F1786C',
+          url: SER321,
         },
         {
           name: 'SER450: Computer Architecture',
-          url: 'https://webapp4.asu.edu/bookstore/viewsyllabus/2241/25528/pdf;jsessionid=FA38DBF3215CE04D0D8175524623B12F',
+          url: SER450,
         },
       ],
     },
