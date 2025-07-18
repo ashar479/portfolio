@@ -1,11 +1,11 @@
 import React from 'react';
 import './Android.css';
-import HomeImg from './Images/Home.PNG';
-import InvestmentsImg from './Images/Invest.PNG';
-import CoinDetailsImg from './Images/CoinDetails.PNG';
-import HomeImgDark from './Images/HomeDark.PNG';
-import InvestmentsImgDark from './Images/InvestDark.PNG';
-import CoinDetailsImgDark from './Images/CoinDetailsDark.PNG';
+import HomeImg from './Images/Home.png';
+import InvestmentsImg from './Images/Invest.png';
+import CoinDetailsImg from './Images/CoinDetails.png';
+import HomeImgDark from './Images/HomeDark.png';
+import InvestmentsImgDark from './Images/InvestDark.png';
+import CoinDetailsImgDark from './Images/CoinDetailsDark.png';
 
 const GITHUB_BACKEND_URL = 'https://github.com/ashar479/cryptopulse-backend';
 const GITHUB_FRONTEND_URL = 'https://github.com/ashar479/cryptopulse-frontend';
