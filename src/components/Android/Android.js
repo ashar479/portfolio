@@ -7,7 +7,7 @@ import CoinDetailsImg from './Images/CoinDetails.png';
 const GITHUB_BACKEND_URL = 'https://github.com/ashar479/cryptopulse-backend';
 const GITHUB_FRONTEND_URL = 'https://github.com/ashar479/cryptopulse-frontend';
 const APK_URL =
-  'https://expo.dev/accounts/anshsharma1206/projects/CryptoPulse/builds/3618094c-e83f-4f09-ae4a-3e33aee091f8';
+  'https://expo.dev/accounts/anshsharma1206/projects/CryptoPulse/builds/7e3f914f-4656-476f-a312-17bc50110124';
 
 const Android = () => {
   return (
