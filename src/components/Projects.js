@@ -32,6 +32,16 @@ const Projects = ({ id, isDarkMode }) => {
       moreInfoLink: '/semantic',
     },
     {
+      title: 'CryptoPulse - React Native',
+      imagePath: AndroidCard,
+      moreInfoLink: '/android',
+    },
+    {
+      title: 'Compiler Design - Programming Paradigms',
+      imagePath: CompilerCard,
+      moreInfoLink: '/naav',
+    },
+    {
       title: 'Traffic Detection With Deep Learning and YOLO',
       imagePath: YOLOCard,
       moreInfoLink: '/yolo',
@@ -40,16 +50,6 @@ const Projects = ({ id, isDarkMode }) => {
       title: 'Neural Style Transfer - Deep Learning',
       imagePath: NSTCard,
       moreInfoLink: '/nst',
-    },
-    {
-      title: 'Compiler Design - Programming Paradigms',
-      imagePath: CompilerCard,
-      moreInfoLink: '/naav',
-    },
-    {
-      title: 'Mobile Development - React Native',
-      imagePath: AndroidCard,
-      moreInfoLink: '/android',
     },
   ];
 
