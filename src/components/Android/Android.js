@@ -1,8 +1,11 @@
 import React from 'react';
 import './Android.css';
-import HomeImg from './Images/Home.png';
-import InvestmentsImg from './Images/Invest.png';
-import CoinDetailsImg from './Images/CoinDetails.png';
+import HomeImg from './Images/Home.PNG';
+import InvestmentsImg from './Images/Invest.PNG';
+import CoinDetailsImg from './Images/CoinDetails.PNG';
+import HomeImgDark from './Images/HomeDark.PNG';
+import InvestmentsImgDark from './Images/InvestDark.PNG';
+import CoinDetailsImgDark from './Images/CoinDetailsDark.PNG';
 
 const GITHUB_BACKEND_URL = 'https://github.com/ashar479/cryptopulse-backend';
 const GITHUB_FRONTEND_URL = 'https://github.com/ashar479/cryptopulse-frontend';
@@ -66,6 +69,27 @@ const Android = () => {
           </div>
           <div className="screenshot-item">
             <img src={CoinDetailsImg} alt="Coin Details" />
+            <p>
+              <b>Coin Details:</b> Charts, stats & analytics
+            </p>
+          </div>
+        </div>
+
+        <div className="screenshots-grid">
+          <div className="screenshot-item">
+            <img src={HomeImgDark} alt="Home" />
+            <p>
+              <b>Home:</b> Live prices & trending coins
+            </p>
+          </div>
+          <div className="screenshot-item">
+            <img src={InvestmentsImgDark} alt="Investments" />
+            <p>
+              <b>Investments:</b> Add & manage your crypto records
+            </p>
+          </div>
+          <div className="screenshot-item">
+            <img src={CoinDetailsImgDark} alt="Coin Details" />
             <p>
               <b>Coin Details:</b> Charts, stats & analytics
             </p>
