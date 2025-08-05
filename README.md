@@ -1,74 +1,79 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+<!-- Banner -->
+<p align="center">
+  <img src="docs/banner.png" alt="Ansh Sharma Portfolio Banner" width="100%" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">🌐 Ansh Sharma — Personal Portfolio</h1>
 
-## Available Scripts
+<p align="center">
+  <a href="https://www.anshsharma.us">Visit Website</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-running-locally">Run Locally</a> •
+  <a href="#-contact">Contact</a>
+</p>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 About the Portfolio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is my **personal portfolio website**, designed to showcase my **skills, projects, publications, and career achievements** as a **Software Engineer**.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+It’s built for **recruiters, collaborators, and peers** to:
+- Explore my **professional journey**
+- View detailed **project case studies**
+- Interact with **Quantabot**, my AI assistant
+- Easily connect via **contact form or LinkedIn**
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `npm run build`
+- **Responsive & Modern UI** — Built with Tailwind CSS for sleek design on all devices
+- **Projects Showcase** — Live demos & GitHub links for my work
+- **Experience Timeline** — Career & education milestones
+- **Publications Section** — Conference papers and research highlights
+- **AI Assistant: Quantabot** 🤖 — Answers queries about my portfolio, skills, and experience
+- **Contact Form** — Integrated messaging for easy outreach
+- **Optimized Performance** — Fast load times via Vercel hosting and CDN
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-React.js-blue?logo=react" />
+  <img src="https://img.shields.io/badge/Styling-TailwindCSS-06B6D4?logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi" />
+  <img src="https://img.shields.io/badge/Database-PostgreSQL-316192?logo=postgresql" />
+  <img src="https://img.shields.io/badge/Hosting-Vercel-black?logo=vercel" />
+  <img src="https://img.shields.io/badge/Cloud-AWS-orange?logo=amazonaws" />
+</p>
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Running Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-username>/<portfolio-repo>.git
+cd <portfolio-repo>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2️⃣ Install Dependencies
+bash
+Copy
+Edit
+npm install
+3️⃣ Start Development Server
+bash
+Copy
+Edit
+npm run dev
+4️⃣ Open in Browser
+Visit: http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# my_portfolio
->>>>>>> ce9965c54beb9c59accc343e39bcb0c5a7bd9193
+📬 Contact
+If you'd like to connect, feel free to reach out:
+Portfolio: anshsharma.us
+LinkedIn: linkedin.com/in/ansh479
+Email: ansh479@gmail.com
