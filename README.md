@@ -1,8 +1,4 @@
 <!-- Banner -->
-<p align="center">
-  <img src="docs/banner.png" alt="Ansh Sharma Portfolio Banner" width="100%" />
-</p>
-
 <h1 align="center">🌐 Ansh Sharma — Personal Portfolio</h1>
 
 <p align="center">
