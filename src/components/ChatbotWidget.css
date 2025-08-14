@@ -9,7 +9,7 @@
   position: fixed;
   bottom: 24px;
   right: 24px;
-  background-color: #ffbf00;
+  background-color: #ffbf00cc;
   border: none;
   border-radius: 24px;
   cursor: pointer;
@@ -67,7 +67,7 @@
 }
 
 .chatbot-header {
-  background-color: #ffbf00a0;
+  background-color: #ffbf00cc;
   color: white;
   font-weight: bold;
   padding: 14px;
@@ -115,7 +115,7 @@
 }
 
 .chatbot-header-button:hover {
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .chatbot-body {
@@ -171,7 +171,7 @@
   margin: 0 0 6px 0;
   font-size: 14px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.566);
+  color: rgba(0, 0, 0, 0.15);
 }
 
 .chatbot-message strong {
@@ -207,7 +207,7 @@
   padding: 2px;
   background: linear-gradient(
     270deg,
-    #ffbf00,
+    #ffbf00cc,
     /* Amber */ #ff6f61,
     /* Coral */ #ff1493,
     /* Deep Pink */ #6a5acd,
@@ -215,7 +215,7 @@
     /* Cyan */ #00e676,
     /* Light Green */ #8bc34a,
     /* Lime Green */ #00ffea,
-    /* Aqua */ #ffbf00 /* Amber again for seamless looping */
+    /* Aqua */ #ffbf00cc /* Amber again for seamless looping */
   );
 
   background-size: 1000% 1000%;
@@ -256,7 +256,7 @@
 }
 
 .chatbot-submit-button {
-  background-color: #ffbf00a0;
+  background-color: #ffbf00cc;
   border: none;
   color: white;
   padding: 10px 14px;

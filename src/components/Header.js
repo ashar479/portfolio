@@ -78,21 +78,22 @@ const Header = ({ onToggleDarkMode, isDarkMode, activeSection }) => {
           </button>
         </div>
       </header>
-      {/* Chatbot here */}
+      {/* Chatbot here
       <div className="animated-border-link">
         Try my new chatbot, KnowBee 🐝, on the rightmost bottom of the Page!
-      </div>
+      </div> */}
       <div
         style={{
-          backgroundColor: 'rgba(255, 215, 0, 0.65)',
+          backgroundColor: '#ffbf00cc',
           padding: '8px 16px',
           textAlign: 'start',
           fontWeight: '500',
           cursor: 'pointer',
           position: 'relative',
           zIndex: 0,
-          color: 'rgba(74, 28, 28, 1)',
+          color: 'rgba(113, 10, 10, 1)',
           textDecoration: 'underline',
+          marginTop: '49pt',
         }}
         onClick={() =>
           window.open(
