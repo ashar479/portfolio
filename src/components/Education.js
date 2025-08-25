@@ -136,7 +136,7 @@ const Education = ({ id, isDarkMode }) => {
         <h3>
           Bachelor of Technology (Electronics and Communication Engineering)
         </h3>
-        <p>Netaji Subhas University of Technology, New Delhi, India - 110031</p>
+        <p>Netaji Subhas University of Technology, East Campus (Formerly GGSIPU), New Delhi, India - 110031</p>
         <p>August 2019 - July 2023</p>
         <p>Cumulative GPA: 8.3/10.0</p>
         <p>
