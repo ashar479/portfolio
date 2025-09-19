@@ -19,6 +19,7 @@ import ChatbotWidget from './components/ChatbotWidget';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AlignedRewards from './components/AlignedRewards/AlignedRewards';
 import Naav from './components/Naav/Naav';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -75,6 +76,7 @@ const App = () => {
 
   return (
     <Router>
+      <SpeedInsights />
       <Routes>
         {/* Main Layout for home, about, projects, etc. */}
         <Route
