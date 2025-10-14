@@ -53,6 +53,7 @@
 │   ├── favicon.ico
 │   ├── favicon.svg
 │   ├── googleb1fa9ba8680b8b2a.html
+│   ├── hero.webp
 │   ├── index.html
 │   ├── manifest.json
 │   ├── robots.txt
@@ -118,7 +119,6 @@
     │   │   ├── cloud.png
     │   │   ├── facebook.svg
     │   │   ├── github.svg
-    │   │   ├── home_img.svg
     │   │   ├── instagram.svg
     │   │   ├── Latest_Transcript_ASU.pdf
     │   │   ├── leetcode.svg

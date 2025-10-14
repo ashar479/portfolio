@@ -1,5 +1,6 @@
 /* Home.css */
 
+/* ---------- Base layout ---------- */
 .home {
   min-height: 100vh;
   display: flex;
@@ -11,19 +12,25 @@
   background-position: center;
 }
 
+/* Theme backgrounds (keep as-is) */
+/* .home.light-mode {
+  background-image: image-set(
+    url('./images/cloud.webp') type('image/webp'),
+    url('./images/cloud.png') type('image/png')
+  );
+}
 .home.dark-mode {
-  background-image: url('./images/cloud_dark.png');
-}
-
-.home.light-mode {
-  background-image: url('./images/cloud.png');
-}
+  background-image: image-set(
+    url('./images/cloud_dark.webp') type('image/webp'),
+    url('./images/cloud_dark.png') type('image/png')
+  );
+} */
 
 .home-container {
   max-width: 100%;
   width: 100%;
   display: flex;
-  margin-top: 100px;
+  margin-top: 100px; /* desktop top spacing */
   padding-right: 5%;
 }
 
@@ -37,33 +44,34 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  position: relative; /* Added position relative */
+  position: relative;
 }
 
+/* ---------- Wave hand animation ---------- */
 .wave-hand {
   display: inline-block;
-  position: relative; /* Added position relative */
+  position: relative;
   animation: wave 1s infinite alternate;
   transform-origin: bottom;
   cursor: pointer;
 }
-
 @keyframes wave {
   0%,
   100% {
-    transform: scale(1) rotate(0deg); /* Initial and final position */
+    transform: scale(1) rotate(0deg);
   }
   25% {
-    transform: scale(1.2) rotate(20deg); /* Hand expands and rotates */
+    transform: scale(1.2) rotate(20deg);
   }
   50% {
-    transform: scale(1) rotate(0deg); /* Hand back to normal */
+    transform: scale(1) rotate(0deg);
   }
   75% {
-    transform: scale(1.2) rotate(-20deg); /* Hand expands and rotates */
+    transform: scale(1.2) rotate(-20deg);
   }
 }
 
+/* ---------- Popup ---------- */
 .popup {
   position: fixed;
   top: 4%;
@@ -74,34 +82,37 @@
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 .popup p {
   color: #000000;
   margin: 0;
   font-weight: lighter;
 }
 
-h1 {
+/* ---------- Typography (scoped) ---------- */
+.home h1 {
   font-size: 2.9rem;
   font-weight: bold;
+  margin: 0;
 }
-
-p {
+.home p {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
+/* Typing line: reserve height to avoid CLS */
 .home-typing-effect {
   font-size: 1.5rem;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid transparent; /* Adjust or remove this property */
+  border-right: 2px solid transparent;
   animation: typing 15s linear infinite, blink-caret 0.5s infinite alternate;
   color: blue;
-  height: 2rem; /* Adjust the height to fit within mobile screens */
+  height: 2rem; /* explicit line box */
+  line-height: 2rem; /* keep stable height */
+  min-height: 2rem; /* guard against CLS */
 }
-
 @keyframes typing {
   0%,
   100% {
@@ -111,7 +122,6 @@ p {
     width: 100%;
   }
 }
-
 @keyframes blink-caret {
   from,
   to {
@@ -127,156 +137,115 @@ p {
   font-weight: lighter;
   color: rgb(255, 255, 255);
 }
-
 .home.light-mode h2 {
   font-size: 1.5rem;
   font-weight: lighter;
-  color: #000; /* Set color to black */
+  color: #000;
 }
 
+/* ---------- (Optional) image container placeholder ---------- */
 .image-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-@keyframes shake {
-  0% {
-    transform: translateY(0);
-  }
-  12% {
-    transform: translateY(-10px);
-  }
-  25% {
-    transform: translateY(-15px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  75% {
-    transform: translateY(-17px);
-  }
-  80% {
-    transform: translateY(-8px);
-  }
-  90% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* Apply shake animation to the image container when shaking is active */
-.image-container.shake-animation {
-  animation: shake 0.5s ease-in-out;
-}
-
+/* ---------- Social + buttons ---------- */
 .social-buttons {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 0px;
+  margin-top: 0;
+  gap: 8px;
+  flex-wrap: wrap;
 }
-
 .social-buttons a {
   margin-right: 1px;
   font-size: 30px;
   color: inherit;
   transition: transform 0.2s ease-in-out;
 }
-
 .social-buttons a:hover {
   transform: scale(1.2);
 }
-
 .social-buttons a:last-child {
-  margin-right: 0px;
+  margin-right: 0;
+}
+
+/* Icons: explicit box to prevent layout shift */
+.social-buttons a img {
+  width: 40px;
+  height: 40px; /* was auto; explicit height prevents CLS */
+  display: block;
 }
 
 .resume-button {
-  margin-top: 25px; /* Adjust the margin as needed */
+  margin-top: 25px;
   text-align: left;
 }
-
 .resume-button button {
-  padding: 15px 30px; /* Adjust padding as needed */
-  background-color: #8ebcec; /* Default button color */
-  color: #fff; /* Text color */
+  padding: 15px 30px;
+  background-color: #8ebcec;
+  color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   margin: 1%;
 }
-
-/* Dark mode button style */
 .home.dark-mode .resume-button button {
-  background-color: rgba(0, 0, 0, 0.596); /* Button color in dark mode */
-  color: #ffffff; /* Text color in dark mode */
+  background-color: rgba(0, 0, 0, 0.596);
+  color: #ffffff;
   border: 1px solid #ffffff;
 }
-
 .resume-button button:hover {
-  background-color: #007bff; /* Duller color on hover */
-  transform: scale(1.1); /* Scale up the button on hover */
+  background-color: #007bff;
+  transform: scale(1.1);
 }
-
 .home.dark-mode .resume-button button:hover {
-  background-color: white; /* Button color in dark mode */
-  color: #000000; /* Text color in dark mode */
-  border: 1px solid #000000;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
 }
 
+/* Developer image helper */
 .developer-image {
   max-width: 100%;
   height: auto;
 }
 
-.shake {
-  animation: shake 0.5s ease-in-out;
-}
+/* ---------- Removed: 'shake' animation/classes (no longer used) ---------- */
+/* (intentionally left out) */
 
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* Adjust image size for social buttons */
-.social-buttons a img {
-  width: 40px; /* Adjust the width to your desired size */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Media query for mobile screens */
+/* ---------- Mobile (≤800px) ---------- */
 @media only screen and (max-width: 800px) {
+  .home.light-mode {
+    background-image: none !important;
+    background-color: #00fffb98; /* your current blue tone */
+  }
+
+  /* Dark mode variant */
+  .home.dark-mode {
+    background-image: none !important;
+    background-color: #353535e3; /* soft dark gray for dark theme */
+  }
+
   .home-container {
-    width: 90%;
-    margin-top: 0; /* reduced from 100px */
-    padding-left: 2%; /* more space on left */
-    padding-right: 2%; /* more space on right */
+    width: 95%;
+    margin-top: 24px; /* reduced top space */
+    padding-left: 2%; /* more side padding */
+    padding-right: 2%;
+    display: block; /* simpler flow on small screens */
   }
 
   .home-info {
     margin-top: 0;
-    max-width: 96%;
-    padding-left: 2%;
-    padding-right: 2%;
+    max-width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: left; /* avoid justify gaps on narrow widths */
+    gap: 8px;
   }
 
   .hello-text {
@@ -285,39 +254,43 @@ p {
   }
 
   .home h1 {
-    font-size: 6vw;
+    font-size: 6vw; /* responsive headline */
     line-height: 1.2;
-    max-width: 90%;
-    margin: 0 0 5px 0;
+    max-width: 92%;
+    text-align: justify;
+    margin-bottom: 0%;
   }
 
+  /* Paragraphs: smaller & readable (was transparent before) */
   .home p {
-    color:#ffffff00;
-    font-size: 1vw; /* smaller text */
-    line-height: 1.4;
-    max-width: 95%;
-    margin: 0 0 10px 0;
+    max-width: 96%;
+    color: #ffffff00;
   }
 
   .home .home-typing-effect {
-    font-size: 2.8vw;
-    height: 1rem;
+    font-size: 3.2vw;
+    height: 1.25rem; /* stable line box */
+    line-height: 1.25rem;
+    min-height: 1.25rem;
   }
 
-  .home h2 {
-    font-size: 0.9rem;
-    font-weight: 200;
-  }
-
+  .home h2,
   .home.light-mode h2 {
-    font-size: 0.9rem;
-    font-weight: 200;
+    font-size: 0.95rem;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 0%;
   }
 
+  .social-buttons {
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 4px;
+  }
   .social-buttons a img {
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
+    width: 20px; /* smaller icons on mobile */
+    height: 20px;
+    margin-right: 8px;
   }
 
   .resume-button button {
@@ -326,6 +299,9 @@ p {
   }
 
   .image-container {
-    display: none;
+    display: none; /* text-first on mobile */
   }
+
+  /* Optional: drop heavy BGs on mobile for perf */
+  /* .home.light-mode, .home.dark-mode { background-image: none; } */
 }

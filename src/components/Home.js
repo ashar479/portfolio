@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Home.css';
 // import Dev from './images/home_img.svg'; // Import the image
 import Insta from './images/instagram.svg';
@@ -6,7 +6,6 @@ import Facebook from './images/facebook.svg';
 import LinkedIn from './images/linkedin.svg';
 import GitHub from './images/github.svg';
 import ResumePopup from './ResumePopup'; // Import the ResumePopup component
-import Resume from './images/Ansh_Sharma_Software_Engineer.pdf';
 import Leetcode from './images/leetcode.svg';
 
 const Home = ({ isDarkMode, id }) => {
@@ -25,33 +24,16 @@ const Home = ({ isDarkMode, id }) => {
     setShowResumePopup(!showResumePopup);
   };
 
-  const [isShaking, setIsShaking] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-
-      // Adjust this threshold as needed
-      const shakeThreshold = 100;
-
-      // Check if scroll position exceeds the threshold
-      if (scrollPosition > shakeThreshold) {
-        setIsShaking(true);
-      } else {
-        setIsShaking(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <div className={`home ${isDarkMode ? 'dark-mode' : 'light-mode'}`} id={id}>
+    <div
+      className={`home ${isDarkMode ? 'dark-mode' : 'light-mode'}`}
+      id={id}
+      style={{
+        backgroundImage: `url(${
+          isDarkMode ? '/cloud_dark.webp' : '/cloud.webp'
+        })`,
+      }}
+    >
       <div className="home-container">
         <div className="home-info">
           <div className="hello-text">
@@ -66,9 +48,11 @@ const Home = ({ isDarkMode, id }) => {
               Dear Hiring Managers, I am Ansh Sharma
             </h1>
           </div>
+
           <p className="home-typing-effect">
             Software Engineer | Intern @EyCrowd | MS Software Engineering @ASU
           </p>
+
           <h2>
             I’m a Software Engineer with experience building full-stack
             applications using React, Node.js, PostgreSQL, and AWS. Currently
@@ -101,6 +85,7 @@ const Home = ({ isDarkMode, id }) => {
             always excited to learn, build, and contribute in fast-paced,
             product-driven teams. Let's Connect!
           </h2>
+
           <div className="social-buttons">
             <a
               href="https://www.linkedin.com/in/anshsharma120601/"
@@ -143,20 +128,20 @@ const Home = ({ isDarkMode, id }) => {
               <img src={Leetcode} alt="Leetcode" />
             </a>
           </div>
+
           <div className="resume-button">
             <button title="Resume in PDF format" onClick={handleResumePopup}>
               Resume
             </button>
           </div>
         </div>
-        <div
-          className={`image-container ${isShaking ? 'shake-animation' : ''}`}
-        >
-          {/* <img src={Dev} alt="Developer" className="developer-image" /> */}
-        </div>
       </div>
+
       {showResumePopup && (
-        <ResumePopup resumeUrl={Resume} onClose={handleResumePopup} />
+        <ResumePopup
+          resumeUrl="/docs/Ansh_Sharma_Software_Engineer.pdf"
+          onClose={handleResumePopup}
+        />
       )}
     </div>
   );

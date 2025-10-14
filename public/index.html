@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <link rel="preload" as="image" href="/hero.webp" imagesrcset="/hero.webp" /> -->
-    <!-- Fonts -->
+    <!-- Performance: fonts + preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload your optimized cloud backgrounds -->
+    <link rel="preload" as="image" href="/cloud.webp" />
+    <link rel="preload" as="image" href="/cloud_dark.webp" />
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Meta tags -->
+    <!-- Meta: Core -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Ansh Sharma" />
+    <link rel="canonical" href="https://anshsharma.us" />
+
+    <!-- Meta: SEO -->
     <meta
       name="description"
       content="Ansh Sharma's Software Engineering portfolio. Showcasing projects in AI, backend development, and full-stack web applications."
     />
     <meta
       name="keywords"
-      content="Ansh Sharma, Software Engineer, Portfolio, React, Java, AI Projects, ASU, Full Stack Developer"
+      content="Ansh Sharma, Software Engineer, Portfolio, React, Node.js, Java, AI Projects, ASU, Full Stack Developer"
     />
 
-    <!-- Favicon and Icons -->
+    <!-- Icons & PWA -->
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
@@ -32,20 +43,20 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- ✅ Open Graph Meta (for social sharing) -->
+    <!-- Open Graph (social sharing) -->
     <meta
       property="og:title"
       content="Ansh Sharma | Software Engineer Portfolio"
     />
     <meta
       property="og:description"
-      content="Explore Ansh Sharma’s full-stack projects, research, and AI applications. Built with React, Java, and cloud technologies."
+      content="Explore Ansh Sharma’s full-stack projects, research, and AI applications. Built with React, Node.js, and cloud tech."
     />
-    <meta property="og:image" content="/favicon-512x512.png" />
+    <meta property="og:image" content="/og-banner.png" />
     <meta property="og:url" content="https://anshsharma.us" />
     <meta property="og:type" content="website" />
 
-    <!-- ✅ Twitter Meta -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -55,9 +66,8 @@
       name="twitter:description"
       content="Visit Ansh Sharma’s interactive portfolio built with React and integrated AI."
     />
-    <meta name="twitter:image" content="/favicon-512x512.png" />
+    <meta name="twitter:image" content="/og-banner.png" />
 
-    <!-- Title -->
     <title>Ansh Sharma | Software Engineer Portfolio</title>
   </head>
 
