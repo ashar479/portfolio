@@ -1,0 +1,218 @@
+.
+├── backend
+│   ├── __pycache__
+│   │   └── main.cpython-313.pyc
+│   ├── list_models.py
+│   ├── main.py
+│   ├── render.yaml
+│   ├── requirements.txt
+│   └── venv
+│       ├── bin
+│       │   ├── __pycache__
+│       │   ├── activate
+│       │   ├── activate.csh
+│       │   ├── activate.fish
+│       │   ├── Activate.ps1
+│       │   ├── autopep8
+│       │   ├── black
+│       │   ├── blackd
+│       │   ├── distro
+│       │   ├── dotenv
+│       │   ├── fastapi
+│       │   ├── git-filter-repo
+│       │   ├── httpx
+│       │   ├── jp.py
+│       │   ├── normalizer
+│       │   ├── openai
+│       │   ├── pip
+│       │   ├── pip3
+│       │   ├── pip3.13
+│       │   ├── pycodestyle
+│       │   ├── python -> python3.13
+│       │   ├── python3 -> python3.13
+│       │   ├── python3.13 -> /opt/homebrew/opt/python@3.13/bin/python3.13
+│       │   ├── tqdm
+│       │   └── uvicorn
+│       ├── include
+│       │   └── python3.13
+│       ├── lib
+│       │   └── python3.13
+│       └── pyvenv.cfg
+├── build
+│   ├── favicon.ico
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── package-lock.json
+├── package.json
+├── project_structure.txt
+├── public
+│   ├── apple-touch-icon.png
+│   ├── favicon-96x96.png
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── googleb1fa9ba8680b8b2a.html
+│   ├── index.html
+│   ├── manifest.json
+│   ├── robots.txt
+│   ├── site.webmanifest
+│   ├── sitemap.xml
+│   ├── web-app-manifest-192x192.png
+│   └── web-app-manifest-512x512.png
+├── README.md
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── components
+    │   ├── AboutMe.css
+    │   ├── AboutMe.js
+    │   ├── AlignedRewards
+    │   │   ├── AlignedRewards.css
+    │   │   ├── AlignedRewards.js
+    │   │   └── capstone_project
+    │   ├── Android
+    │   │   ├── Android.css
+    │   │   ├── Android.js
+    │   │   └── Images
+    │   ├── BirthdayBanner.css
+    │   ├── BirthdayBanner.js
+    │   ├── Card.css
+    │   ├── Card.js
+    │   ├── ChatbotWidget.css
+    │   ├── ChatbotWidget.js
+    │   ├── docs
+    │   │   ├── cse565.pdf
+    │   │   ├── cse575.pdf
+    │   │   ├── SER315.pdf
+    │   │   ├── SER321.pdf
+    │   │   ├── ser423.pdf
+    │   │   ├── SER450.pdf
+    │   │   ├── ser501.pdf
+    │   │   ├── ser502.pdf
+    │   │   ├── ser531.pdf
+    │   │   └── ser594.pdf
+    │   ├── Education.css
+    │   ├── Education.js
+    │   ├── Footer.css
+    │   ├── Footer.js
+    │   ├── Game
+    │   │   ├── Code.png
+    │   │   ├── Game.css
+    │   │   ├── Game.js
+    │   │   ├── Kill.png
+    │   │   ├── Main_Menu.png
+    │   │   ├── Task1.png
+    │   │   ├── Task2.png
+    │   │   └── UI.png
+    │   ├── GradientText.css
+    │   ├── GradientText.js
+    │   ├── Header.css
+    │   ├── Header.js
+    │   ├── Home.css
+    │   ├── Home.js
+    │   ├── images
+    │   │   ├── Ansh_Sharma_Software_Engineer.pdf
+    │   │   ├── cloud_dark.png
+    │   │   ├── cloud.png
+    │   │   ├── facebook.svg
+    │   │   ├── github.svg
+    │   │   ├── home_img.svg
+    │   │   ├── instagram.svg
+    │   │   ├── Latest_Transcript_ASU.pdf
+    │   │   ├── leetcode.svg
+    │   │   ├── linkedin.svg
+    │   │   └── mom.jpeg
+    │   ├── images_tools
+    │   │   ├── ant.svg
+    │   │   ├── AWS.svg
+    │   │   ├── chatgpt.svg
+    │   │   ├── cucumber.svg
+    │   │   ├── docker.svg
+    │   │   ├── Figma.svg
+    │   │   ├── git.svg
+    │   │   ├── gradle.jpg
+    │   │   ├── Grafana.svg
+    │   │   ├── GraphDB.webp
+    │   │   ├── heroku.svg
+    │   │   ├── hugging_face.png
+    │   │   ├── java.svg
+    │   │   ├── Jenkins.svg
+    │   │   ├── jira.svg
+    │   │   ├── junit5.svg
+    │   │   ├── maven.png
+    │   │   ├── mysql.svg
+    │   │   ├── Postman.svg
+    │   │   ├── protege.png
+    │   │   ├── Python.svg
+    │   │   ├── react_native.webp
+    │   │   ├── react.svg
+    │   │   ├── REST.svg
+    │   │   ├── Salesforce.svg
+    │   │   ├── scrum.svg
+    │   │   ├── Selenium.svg
+    │   │   ├── sparql.webp
+    │   │   ├── SRP_Bill_Nov.pdf
+    │   │   ├── Swagger.svg
+    │   │   ├── taiga.svg
+    │   │   ├── TDD.png
+    │   │   ├── tensorflow.svg
+    │   │   ├── Unity.jpg
+    │   │   ├── Vercel.svg
+    │   │   └── wireshark.png
+    │   ├── Naav
+    │   │   ├── Naav.css
+    │   │   └── Naav.js
+    │   ├── Nst
+    │   │   ├── NST_Results.jpeg
+    │   │   ├── Nst.css
+    │   │   └── Nst.js
+    │   ├── projects_images
+    │   │   ├── Aligned
+    │   │   ├── Android
+    │   │   ├── Compiler
+    │   │   ├── Game
+    │   │   ├── NST
+    │   │   ├── Scrum
+    │   │   ├── Semantic
+    │   │   └── Yolo
+    │   ├── Projects.css
+    │   ├── Projects.js
+    │   ├── ResearchPublications.css
+    │   ├── ResearchPublications.js
+    │   ├── ResumePopup.css
+    │   ├── ResumePopup.js
+    │   ├── Scrum
+    │   │   ├── agile_realms_UI.jpeg
+    │   │   ├── CodeBase.png
+    │   │   ├── Scrum.css
+    │   │   ├── Scrum.js
+    │   │   └── Scrum.png
+    │   ├── Semantic
+    │   │   ├── Code.png
+    │   │   ├── Cross City.png
+    │   │   ├── GraphDb.png
+    │   │   ├── Hotspots.png
+    │   │   ├── Police_Impact.png
+    │   │   ├── Query.png
+    │   │   ├── Semantic.css
+    │   │   ├── Semantic.js
+    │   │   ├── Temporal.png
+    │   │   ├── TTLs.png
+    │   │   └── UI_Home.png
+    │   ├── ToggleButton.css
+    │   ├── ToggleButton.js
+    │   ├── Work.css
+    │   ├── Work.js
+    │   └── YOLO
+    │       ├── Yolo_Results_Detected.jpeg
+    │       ├── Yolo.css
+    │       └── Yolo.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    ├── reportWebVitals.js
+    └── setupTests.js
+
+36 directories, 180 files

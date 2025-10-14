@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import Dev from './images/home_img.svg'; // Import the image
+// import Dev from './images/home_img.svg'; // Import the image
 import Insta from './images/instagram.svg';
 import Facebook from './images/facebook.svg';
 import LinkedIn from './images/linkedin.svg';
@@ -152,7 +152,7 @@ const Home = ({ isDarkMode, id }) => {
         <div
           className={`image-container ${isShaking ? 'shake-animation' : ''}`}
         >
-          <img src={Dev} alt="Developer" className="developer-image" />
+          {/* <img src={Dev} alt="Developer" className="developer-image" /> */}
         </div>
       </div>
       {showResumePopup && (

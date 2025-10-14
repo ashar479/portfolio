@@ -24,6 +24,7 @@
   width: 100%;
   display: flex;
   margin-top: 100px;
+  padding-right: 5%;
 }
 
 .home-info {
@@ -261,60 +262,67 @@ p {
 
 /* Media query for mobile screens */
 @media only screen and (max-width: 800px) {
+  .home-container {
+    width: 90%;
+    margin-top: 0; /* reduced from 100px */
+    padding-left: 2%; /* more space on left */
+    padding-right: 2%; /* more space on right */
+  }
+
   .home-info {
-    margin-top: -100pt;
+    margin-top: 0;
+    max-width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: justify; /* Center the text horizontally */
-    margin-right: 5%; /* Add a margin to the right side */
+    text-align: justify;
   }
 
   .hello-text {
-    align-items: center; /* Center the text horizontally */
-    flex-direction: column; /* Arrange text in a column */
+    align-items: flex-start;
+    flex-direction: column;
   }
 
-  h1 {
-    font-size: 5vw; /* Adjust font size */
-    line-height: 1.2; /* Increase line height for better readability */
-    max-width: 90%; /* Limit width to ensure it fits within the screen */
-    margin: 0 auto; /* Center the element horizontally */
-    margin-bottom: 10px;
+  .home h1 {
+    font-size: 6vw;
+    line-height: 1.2;
+    max-width: 90%;
+    margin: 0 0 5px 0;
   }
 
-  p {
-    font-size: 3vw; /* Adjust font size */
-    line-height: 1.2; /* Increase line height for better readability */
-    max-width: 90%; /* Limit width to ensure it fits within the screen */
-    margin: 0 auto; /* Center the element horizontally */
-    margin-bottom: 10px;
+  .home p {
+    color:#ffffff00;
+    font-size: 1vw; /* smaller text */
+    line-height: 1.4;
+    max-width: 95%;
+    margin: 0 0 10px 0;
   }
 
-  .home-typing-effect {
-    font-size: x-small;
-    height: 1rem; /* Adjust the height to fit within mobile screens */
+  .home .home-typing-effect {
+    font-size: 2.8vw;
+    height: 1rem;
   }
 
   .home h2 {
-    font-size: 1rem;
-    font-weight: lighter;
+    font-size: 0.9rem;
+    font-weight: 200;
   }
 
   .home.light-mode h2 {
-    font-size: 1rem;
-    font-weight: lighter;
+    font-size: 0.9rem;
+    font-weight: 200;
   }
 
   .social-buttons a img {
-    width: 20px; /* Adjust the width to your desired size */
-    height: auto; /* Maintain aspect ratio */
+    width: 20px;
+    height: auto;
     margin-right: 10px;
   }
 
   .resume-button button {
-    font-size: 14px; /* Adjust font size */
-    padding: 6px 14px; /* Adjust padding */
+    font-size: 14px;
+    padding: 6px 14px;
   }
 
   .image-container {
