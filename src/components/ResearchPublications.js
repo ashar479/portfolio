@@ -24,7 +24,7 @@ const ResearchPublications = ({ id, isDarkMode }) => {
         </p>
         <p>
           <ul>
-            <li>Nov2021 to Jan2022</li>
+            <li>Nov2021 to Feb2022</li>
             <li>
               At Eklavya NGO in Delhi, I taught underprivileged students core
               Computer Science concepts, basic programming, and API development.

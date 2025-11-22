@@ -59,8 +59,8 @@ const Footer = () => {
         <div className="contact-form">
           <h3>Connect With Me</h3>
           <h2>
-            Note! This mail will not be sent from the email address you entered.
-            Only the mail will contain that email address.
+            Note! This mail will be sent from a proxy mail address.
+            The contents of the email will contain your email address.
           </h2>
           <form onSubmit={handleSubmit}>
             <input
@@ -95,8 +95,8 @@ const Footer = () => {
         <div className="info-section">
           <div>
             <h3>Address</h3>
-            <p>1831 E Apache Blvd, Apt. B-3076</p>
-            <p>Tempe, Arizona, United States - 85281</p>
+            <p>Lipton Pl</p>
+            <p>San Ramon, CA, 94583</p>
           </div>
           <div>
             <h3>Social Media</h3>

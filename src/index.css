@@ -1,5 +1,21 @@
+/* Global box-sizing: good, keep this */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Keep html/body simple and standard */
+html,
 body {
   margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  /* ✗ no width: 100% */
+  /* ✗ no overflow-x: hidden here */
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

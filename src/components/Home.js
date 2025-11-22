@@ -7,6 +7,7 @@ import LinkedIn from './images/linkedin.svg';
 import GitHub from './images/github.svg';
 import ResumePopup from './ResumePopup'; // Import the ResumePopup component
 import Leetcode from './images/leetcode.svg';
+import Headshot from './images/Headshot.svg';
 
 const Home = ({ isDarkMode, id }) => {
   const [isWaving, setIsWaving] = useState(false);
@@ -36,6 +37,12 @@ const Home = ({ isDarkMode, id }) => {
     >
       <div className="home-container">
         <div className="home-info">
+          {/* ---------- Avatar Added Here ---------- */}
+          <div className="avatar-wrapper">
+            <img src={Headshot} alt="Ansh Sharma" className="avatar" />
+          </div>
+          {/* ---------------------------------------- */}
+
           <div className="hello-text">
             <h1>
               <span
@@ -50,40 +57,25 @@ const Home = ({ isDarkMode, id }) => {
           </div>
 
           <p className="home-typing-effect">
-            Software Engineer | Intern @EyCrowd | MS Software Engineering @ASU
+            Software Engineer | Full-stack | Devops | Published Author
           </p>
 
           <h2>
-            I’m a Software Engineer with experience building full-stack
-            applications using React, Node.js, PostgreSQL, and AWS. Currently
-            interning at{' '}
-            <a href="https://eycrowd.com/" target="_blank" rel="noreferrer">
-              EyCrowd
-            </a>
-            , I’m contributing to AI-driven platform development and user
-            engagement features while working with tools like Mixpanel,
-            Salesforce, and CI/CD pipelines. Previously, I worked on scalable
-            cloud-native systems at{' '}
-            <a
-              href="https://roundtechsquare.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              RoundTechSquare
-            </a>{' '}
-            and developed NLP-based UI components at{' '}
-            <a
-              href="https://www.hiration.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Hiration
-            </a>
-            . My work spans CRM integrations, test automation, workflow
-            optimization, and frontend architecture. I’m passionate about AI,
-            developer tools, and creating meaningful user experiences—and I’m
-            always excited to learn, build, and contribute in fast-paced,
-            product-driven teams. Let's Connect!
+            I’m a Software Engineer specializing in full-stack and cloud-native
+            development, with experience delivering production systems across
+            React, Node.js, Spring Boot, AWS, and Kubernetes. At EyCrowd, I
+            built and tested React Native apps, containerized microservices, and
+            developed LLM-driven automation that improved performance,
+            reliability, and deployment speed. Before that, I engineered
+            scalable distributed systems at RoundTechSquare, integrating CI/CD
+            pipelines, event-driven workflows with Kafka and Redis, and
+            monitoring dashboards that increased system uptime by 25%. I’ve also
+            built AI-powered applications, including an engagement chatbot
+            deployed on alignedrewards.com and a QA dashboard processing 10K+
+            sessions in real time. My work spans frontend architecture,
+            microservices, DevOps automation, testing, and applied AI. I enjoy
+            building reliable, user-focused products and thrive in
+            collaborative, fast-paced engineering environments.
           </h2>
 
           <div className="social-buttons">

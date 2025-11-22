@@ -9,11 +9,11 @@ const Work = ({ id, isDarkMode }) => {
     {
       title: 'Software Engineer / QA Intern',
       organization: 'EyCrowd, San Francisco, CA',
-      duration: 'June 2025 – Present',
+      duration: 'June 2025 – November 2025',
       highlights: [
-        'Developed cross-platform features for the EyCrowd mobile app using React Native, and wrote unit tests with Jest and React Testing Library to ensure component stability and UI reliability across devices',
-        'Worked with Salesforce CRM to align campaign tracking with internal pipelines, and set up Docker test environments for QA validation and internal deployment consistency',
-        'Collaborated with AI engineers to evaluate LLM integration patterns and optimize user engagement logic, using Mixpanel to track behavior and contributing to a redesign that improved daily active usage by 25% approximately',
+        'Built cross-platform React Native apps with Jest testing, improving load performance by 30% and reducing UI defects by 40%',
+        'Containerized Node.js microservices with Docker and Kubernetes, integrated Salesforce CRM, Mixpanel, and WebSockets to boost engagement by 25%',
+        'Delivered LLM-based predictive automation to enhance scalability and reliability, cutting MTTR by 35% and accelerating deployment cycles by 40%',
       ],
     },
     {
@@ -21,20 +21,19 @@ const Work = ({ id, isDarkMode }) => {
       organization: 'RoundTechSquare, San Francisco, CA',
       duration: 'Jan 2025 – May 2025',
       highlights: [
-        'Built a cloud-native inventory management system using React.js, and Amazon Web Services (AWS) including S3, EC2, DynamoDB, reducing manual errors by 30%',
-        'Automated CI/CD pipelines with Jenkins and GitHub Actions, containerized services using Docker, and implemented performance monitoring with Grafana, reducing deploy issues and improving service reliability',
-        'Collaborated with product managers and analysts to define scalable data workflows, using Postman to validate endpoints and enhance internal API adoption alongside Swagger-based documentation',
+        'Built a cloud-native inventory system using React.js, Spring Boot, and AWS microservices, improving scalability and enabling seamless deployment across environments',
+        'Automated CI/CD pipelines with Jenkins and GitHub Actions, integrating SLOs/SLIs and Grafana monitoring to boost system uptime by 25%',
+        'Optimized APIs with Kafka messaging and Redis caching, enhancing performance and reducing manual errors by 30% through secure, event-driven workflows',
       ],
     },
     {
       title: 'Teaching Assistant',
       organization: 'Arizona State University, Tempe, Arizona',
-      duration: 'August 2023 – Present',
+      duration: 'August 2024 – May 2025',
       highlights: [
         "Conducted coding sessions, improving students' assignment completion rates by 15%.",
         'Facilitated Agile methodologies such as Scrum, TDD, and Git version control in course projects.',
         'Collaborated with faculty to refine the curriculum, increasing course enrollment by 10% and integrating CI/CD pipelines and containerization tools.',
-        'Worked on the following courses: ',
       ],
       courses: [
         {
@@ -49,16 +48,6 @@ const Work = ({ id, isDarkMode }) => {
           name: 'SER450: Computer Architecture',
           url: SER450,
         },
-      ],
-    },
-    {
-      title: 'Software Engineer',
-      organization: 'Hiration Career Technologies, New Delhi, India',
-      duration: 'Jun 2020 – Nov 2022',
-      highlights: [
-        'Developed reusable React components using JSX, integrated with Next.js and Node.js, improving server-side rendering performance by 20% for Natural Language Processing models',
-        'Managed source control with Git, facilitated project deployment on Vercel, and optimized component design using Figma and Unified Modeling Language (UML) tools, reducing design-to-deployment time by 25%',
-        'Executed Exploratory Testing (white box) and JUnit5 (black box), achieving 95% code coverage with Java Code Coverage (JaCoCo) and maintaining software quality with a 99% DOI adherence rate',
       ],
     },
   ];
