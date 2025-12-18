@@ -52,7 +52,7 @@ const Home = ({ isDarkMode, id }) => {
               >
                 👋
               </span>{' '}
-              Dear Hiring Managers, I am Ansh Sharma
+              Hello, I am Ansh Sharma
             </h1>
           </div>
 
