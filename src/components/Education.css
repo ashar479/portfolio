@@ -5,7 +5,7 @@
   width: auto;
   height: auto;
   text-align: left;
-  background-color: rgba(243, 245, 246, 0.798);
+  background-color: transparent;
 }
 
 .education h2 {
@@ -35,11 +35,6 @@
   font-size: 1.2rem;
   text-underline-position: below;
   margin-bottom: auto;
-}
-
-/* Dark mode styles */
-.dark-mode .education {
-  background-color: #353535e3;
 }
 
 .dark-mode .education h2,
@@ -90,20 +85,20 @@
   }
 
   .education h2 {
-    font-size: 1.5rem; /* Adjust heading font size for smaller screens */
-  }
-
-  .education h3 {
     font-size: 1rem; /* Adjust heading font size for smaller screens */
   }
 
+  .education h3 {
+    font-size: 0.7rem; /* Adjust heading font size for smaller screens */
+  }
+
   .education p {
-    font-size: 0.7rem; /* Adjust paragraph font size for smaller screens */
+    font-size: 0.5rem; /* Adjust paragraph font size for smaller screens */
     font-weight: lighter;
   }
 
   .education ul li {
-    font-size: 0.7rem; /* Adjust paragraph font size for smaller screens */
+    font-size: 0.5rem; /* Adjust paragraph font size for smaller screens */
     font-weight: lighter;
   }
 }

@@ -7,7 +7,12 @@ import Home from './components/Home';
 
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+} from 'react-router-dom';
 
 /**
  * Below-the-fold sections: lazy-load
@@ -95,15 +100,34 @@ const App = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const MainLayout = ({ children }) => (
+  const MainLayout = () => (
     <div className={`App ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+      <div
+        className={`pointer-events-none fixed inset-0 -z-10
+    ${
+      isDarkMode
+        ? 'bg-black bg-[radial-gradient(ellipse_800px_350px_at_50%_1%,#707070,transparent)]'
+        : 'bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]'
+    }`}
+      >
+        {!isDarkMode && (
+          <div
+            className="
+    absolute inset-0
+    bg-[radial-gradient(circle_400px_at_100%_200px,#C9EBFF,transparent)]
+    md:bg-[radial-gradient(circle_800px_at_100%_200px,#C9EBFF,transparent)]
+  "
+          />
+        )}
+      </div>
+
       <Analytics />
       <Header
         onToggleDarkMode={toggleDarkMode}
         isDarkMode={isDarkMode}
         activeSection={activeSection}
       />
-      {children}
+      <Outlet />
       <Footer />
     </div>
   );
@@ -112,16 +136,13 @@ const App = () => {
     <Router>
       <SpeedInsights />
       <Routes>
-        {/* Main page */}
-        <Route
-          path="/"
-          element={
-            <MainLayout>
+        <Route element={<MainLayout />}>
+          <Route
+            path="/"
+            element={
               <div className="App-content">
-                {/* Eager: keep hero text instant for LCP */}
                 <Home isDarkMode={isDarkMode} id="home" />
 
-                {/* Lazy: below-the-fold sections */}
                 <Suspense fallback={null}>
                   <AboutMe isDarkMode={isDarkMode} id="about" />
                   <Education isDarkMode={isDarkMode} id="education" />
@@ -133,78 +154,76 @@ const App = () => {
                   />
                 </Suspense>
 
-                {/* Mount chatbot after page is interactive */}
                 <LazyChatbotWidget />
               </div>
-            </MainLayout>
-          }
-        />
+            }
+          />
 
-        {/* Other routes (each lazy) */}
-        <Route
-          path="/semantic"
-          element={
-            <Suspense fallback={null}>
-              <Semantic />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/game"
-          element={
-            <Suspense fallback={null}>
-              <Game />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/scrum"
-          element={
-            <Suspense fallback={null}>
-              <Scrum />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/yolo"
-          element={
-            <Suspense fallback={null}>
-              <Yolo />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/nst"
-          element={
-            <Suspense fallback={null}>
-              <Nst />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/android"
-          element={
-            <Suspense fallback={null}>
-              <Android />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/aligned_rewards"
-          element={
-            <Suspense fallback={null}>
-              <AlignedRewards />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/naav"
-          element={
-            <Suspense fallback={null}>
-              <Naav />
-            </Suspense>
-          }
-        />
+          <Route
+            path="/semantic"
+            element={
+              <Suspense fallback={null}>
+                <Semantic />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/game"
+            element={
+              <Suspense fallback={null}>
+                <Game />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/scrum"
+            element={
+              <Suspense fallback={null}>
+                <Scrum />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/yolo"
+            element={
+              <Suspense fallback={null}>
+                <Yolo />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/nst"
+            element={
+              <Suspense fallback={null}>
+                <Nst />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/android"
+            element={
+              <Suspense fallback={null}>
+                <Android />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/aligned_rewards"
+            element={
+              <Suspense fallback={null}>
+                <AlignedRewards />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/naav"
+            element={
+              <Suspense fallback={null}>
+                <Naav />
+              </Suspense>
+            }
+          />
+        </Route>
       </Routes>
     </Router>
   );

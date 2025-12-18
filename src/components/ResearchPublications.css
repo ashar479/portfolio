@@ -1,57 +1,96 @@
 /* ResearchPublications.css */
+
 .research-publications {
   padding: 2%;
-  background-color: rgb(243 244 246);
+  background: transparent;
 }
 
+/* Headings */
 .research-publications h2 {
   font-size: 2.5rem;
-  margin-bottom: auto;
+  margin-bottom: 16px;
 }
 
+/* Entry “card” so text is readable but grid still shows */
 .research-publications .publication-entry {
-  margin-bottom: auto;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(6px);
 }
 
+/* Title */
 .research-publications h3 {
   font-size: 1.8rem;
-  margin-bottom: auto;
+  margin-bottom: 10px;
   font-weight: lighter;
   text-decoration: underline;
 }
 
+/* Text */
 .research-publications p {
   font-size: 1.2rem;
   color: #333;
   font-weight: lighter;
   font-style: italic;
+  margin: 8px 0;
 }
 
-/* Dark mode styles */
-.dark-mode .research-publications {
-  background-color: #939393c6;
+/* Lists */
+.research-publications ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
 }
 
-.dark-mode .research-publications h2,
-.dark-mode .research-publications .publication-entry h3,
-.dark-mode .research-publications .publication-entry p {
+.research-publications li {
+  margin: 6px 0;
+}
+
+/* Links */
+.research-publications a {
+  color: rgb(95, 162, 255);
+  text-decoration: none;
+}
+
+.research-publications a:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode: your element is "research-publications dark-mode" */
+.research-publications.dark-mode .publication-entry {
+  background: transparent;
+}
+
+.research-publications.dark-mode h2,
+.research-publications.dark-mode h3,
+.research-publications.dark-mode p,
+.research-publications.dark-mode li {
   color: rgb(202, 202, 202);
+}
+
+.research-publications.dark-mode a {
+  color: rgb(145, 190, 255);
 }
 
 /* Media Query for smaller screens */
 @media only screen and (max-width: 800px) {
   .research-publications h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-
-  .research-publications .publication-entry h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-
-  .research-publications p {
     font-size: 1rem;
-    line-height: 1.4;
+    margin-bottom: 14px;
+  }
+
+  .research-publications h3 {
+    font-size: 0.7rem;
+  }
+
+  .research-publications p,
+  .research-publications li {
+    font-size: 0.5rem;
+  }
+
+  .research-publications .publication-entry {
+    padding: 0.5rem;
+    border-radius: 10px;
   }
 }

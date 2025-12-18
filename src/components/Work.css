@@ -1,6 +1,6 @@
 .work {
   padding: 1%;
-  background-color: rgb(243 244 246);
+  background-color: transparent;
 }
 
 .work h2 {
@@ -85,11 +85,6 @@
   color: #555;
 }
 
-/* Dark mode styles */
-.dark-mode .work {
-  background-color: #9a9a9ae3;
-}
-
 .dark-mode .work h2 {
   color: #e6e6e6ba;
 }
@@ -116,23 +111,22 @@
 /* Media Query for smaller screens */
 @media only screen and (max-width: 800px) {
   .work h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-
-  .timeline-content {
-    padding: 1rem;
-  }
-
-  .timeline-content h3 {
-    font-size: 1.2rem;
-  }
-
-  .timeline-content h4 {
     font-size: 1rem;
   }
 
+  .timeline-content {
+    padding: 0.4rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 0.7rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 0.5rem;
+  }
+
   .timeline-content li {
-    font-size: 0.9rem;
+    font-size: 0.5rem;
   }
 }

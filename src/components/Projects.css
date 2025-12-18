@@ -1,6 +1,6 @@
 .projects {
   padding: 4%;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
 }
 
 .projects h2 {
@@ -131,11 +131,6 @@
   background-color: #6495ed;
 }
 
-/* Dark mode styles */
-.dark-mode .projects {
-  background-color: #919191d5;
-}
-
 .dark-mode .projects h2 {
   color: rgba(255, 255, 255, 0.54);
 }
@@ -162,12 +157,24 @@
     border-radius: 8px;
   }
 
+  .projects h2 {
+    font-size: 1rem;
+  }
+
+  .projects p {
+    font-size: 0.5rem;
+  }
+  
+  .projects a {
+    font-size: 0.5rem;
+  }
+
   .project-overlay h3 {
-    font-size: 1.2rem;
+    font-size: 0.5rem;
   }
 
   .details-button {
-    font-size: 0.9rem;
-    padding: 10px 20px;
+    font-size: 0.5rem;
+    padding: 0.5rem;
   }
 }

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Global box-sizing: good, keep this */
 *,
 *::before,

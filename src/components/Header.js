@@ -84,14 +84,14 @@ const Header = ({ onToggleDarkMode, isDarkMode, activeSection }) => {
       </div> */}
       <div
         style={{
-          backgroundColor: '#ffbf00cc',
+          backgroundColor: isDarkMode ? '#000000ff' : '#ffbf00cc',
           padding: '8px 16px',
           textAlign: 'start',
           fontWeight: '500',
           cursor: 'pointer',
           position: 'relative',
           zIndex: 0,
-          color: 'rgba(113, 10, 10, 1)',
+          color: isDarkMode ? '#ffbf00cc' : 'rgba(113, 10, 10, 1)',
           textDecoration: 'underline',
           marginTop: '49pt',
         }}

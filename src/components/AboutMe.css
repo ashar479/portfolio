@@ -1,12 +1,15 @@
 /* AboutMe.css */
 
-/* Styles for both light and dark modes */
+/* Base */
 .about-me {
-  min-height: 100vh; /* Ensure the container fills the viewport */
+  min-height: 100vh;
   width: auto;
   padding: 20px;
-  height: auto; /* Ensure the container fills its content vertically */
+  height: auto;
   text-align: left;
+
+  /* IMPORTANT: don't cover the global background */
+  background: transparent;
 }
 
 .about-me h2 {
@@ -18,28 +21,24 @@
 .about-me p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #000000; /* Default text color */
+  color: #000000;
   text-align: justify;
   margin-bottom: 30px;
 }
 
-/* Dark mode styles */
-.about-me.dark-mode {
-  background-color: #9a9a9ae3; /* Dark mode background color */
-}
-
+/* Dark mode text only (no section background) */
 .about-me.dark-mode p {
-  color: #e6e6e6ba; /* Dark mode paragraph text color */
+  color: #e6e6e6;
 }
 
 /* Button styles */
 .button-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Distribute space between buttons */
+  justify-content: space-between;
   width: 100%;
   height: auto;
-  margin-bottom: 1%; /* Increase margin between button groups */
+  margin-bottom: 1%;
   transform: translateY(100%);
   transition: transform 0.5s ease-out;
   will-change: transform;
@@ -47,55 +46,54 @@
 }
 
 .button-group.show {
-  transform: translateY(0%); /* Slide buttons upwards */
+  transform: translateY(0%);
 }
 
 .button-group button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffbf00cc; /* Button background color */
-  color: #ffffff; /* Button text color */
+  background-color: #ffbf00cc;
+  color: #ffffff;
   border: none;
-  padding: 15px 30px; /* Increase button padding */
+  padding: 15px 30px;
   margin: 0.5%;
-  border-radius: 10px; /* Increase button border radius */
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  flex: 1; /* Each button takes equal space */
-  min-width: 150px; /* Set a minimum width for each button */
+  flex: 1;
+  min-width: 150px;
   font-size: 20px;
 }
 
 .button-group button img {
-  max-width: 50px; /* Adjust max-width of the logo */
-  margin-right: 10px; /* Add margin to separate logo and text */
+  max-width: 50px;
+  margin-right: 10px;
 }
 
 .button-group button:hover {
-  background-color: #ffa600; /* Button background color on hover */
+  background-color: #ffa600;
 }
 
-/* Increase space between buttons */
 .button-group + .button-group {
   margin-top: 20px;
 }
 
-/* Media query for mobile screens */
+/* Mobile */
 @media only screen and (max-width: 800px) {
   .about-me {
-    padding: 3%; /* Adjust padding for smaller screens */
-    height: auto; /* Let height adjust to content on smaller screens */
+    padding: 3%;
+    height: auto;
   }
 
   .about-me h2 {
-    font-size: 4vw; /* Adjust heading font size for smaller screens */
+    font-size: 5vw;
     margin-bottom: 10px;
     text-align: center;
   }
 
   .about-me p {
-    font-size: 2.5vw; /* Adjust paragraph font size for smaller screens */
+    font-size: 0.5rem;
     margin-bottom: 10px;
   }
 
@@ -109,9 +107,9 @@
     font-size: 10px;
     margin: 2%;
   }
-  
+
   .button-group button img {
-    max-width: 20px; /* Adjust max-width of the logo */
-    margin-right: 10px; /* Add margin to separate logo and text */
+    max-width: 20px;
+    margin-right: 10px;
   }
 }
