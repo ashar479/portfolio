@@ -50,38 +50,54 @@
 }
 
 .timeline-content {
+  --glow-1: rgba(56, 189, 248, 0.45);
+  --glow-2: rgba(56, 189, 248, 0.14);
+  --glow-3: rgba(255, 255, 255, 0);
+
   position: relative;
   background: #ffffff;
-  border: 1px solid #ddd;
+  border: 1px solid #dbeafe;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(2, 6, 23, 0.1);
   overflow: hidden;
+}
+
+.dark-mode .timeline-content {
+  --glow-1: rgba(92, 51, 23, 0.45);
+  --glow-2: rgba(165, 105, 60, 0.16);
+  --glow-3: rgba(255, 255, 255, 0);
+
+  background: #020617;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  color: #e2e8f0;
 }
 
 .timeline-content::before,
 .timeline-content::after {
   content: '';
   position: absolute;
-  width: 500px;
+  width: 600px;
   height: 500px;
   border-radius: 50%;
   background: radial-gradient(
     circle farthest-side,
-    rgba(255, 0, 182, 0.15),
-    rgba(255, 255, 255, 0)
+    var(--glow-1),
+    var(--glow-2),
+    var(--glow-3)
   );
   pointer-events: none;
 }
 
 .timeline-content::before {
-  top: -10%;
-  left: -20%;
+  top: -15%;
+  left: -25%;
 }
 
 .timeline-content::after {
-  top: -10%;
-  right: -20%;
+  top: -15%;
+  right: -25%;
 }
 
 .timeline-content h3 {

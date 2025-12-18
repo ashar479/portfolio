@@ -11,13 +11,55 @@
   margin-bottom: 16px;
 }
 
-/* Entry “card” so text is readable but grid still shows */
 .research-publications .publication-entry {
+  --glow-1: rgba(56, 189, 248, 0.45);
+  --glow-2: rgba(56, 189, 248, 0.14);
+  --glow-3: rgba(255, 255, 255, 0);
+
+  position: relative;
   margin-bottom: 16px;
   padding: 16px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+
+.dark-mode .research-publications .publication-entry {
+  --glow-1: rgba(92, 51, 23, 0.45);
+  --glow-2: rgba(165, 105, 60, 0.16);
+  --glow-3: rgba(255, 255, 255, 0);
+
+  background: rgba(2, 6, 23, 0.75);
+  border: 1px solid rgba(165, 105, 60, 0.35);
+  color: #e2e8f0;
+}
+
+.research-publications .publication-entry::before,
+.research-publications .publication-entry::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle farthest-side,
+    var(--glow-1),
+    var(--glow-2),
+    var(--glow-3)
+  );
+  pointer-events: none;
+}
+
+.research-publications .publication-entry::before {
+  top: -20%;
+  left: -30%;
+}
+
+.research-publications .publication-entry::after {
+  top: -20%;
+  right: -30%;
 }
 
 /* Title */
