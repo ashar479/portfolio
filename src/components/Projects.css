@@ -162,19 +162,19 @@
   }
 
   .projects p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
-  
+
   .projects a {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 
   .project-overlay h3 {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 
   .details-button {
-    font-size: 0.5rem;
-    padding: 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.7rem;
   }
 }

@@ -12,6 +12,29 @@
   position: fixed;
 }
 
+.eklavya-link {
+  padding: 8px 16px;
+  text-align: start;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  margin-top: 49pt;
+  text-decoration: underline;
+}
+
+/* Light mode */
+.eklavya-link.light {
+  background-color: #ffbf00cc;
+  color: rgba(113, 10, 10, 1);
+}
+
+/* Dark mode */
+.eklavya-link.dark {
+  background-color: #000000; /* slightly greyish black */
+  color: #ffbf00cc;
+}
+
 /* Dark mode styles */
 .dark-mode {
   background-color: #000000; /* Dark mode background color */
@@ -79,6 +102,22 @@
   }
   .section-buttons {
     display: none;
+  }
+
+  .eklavya-link {
+    font-size: small;
+    margin-top: 18%;
+  }
+
+  .eklavya-link.light {
+    background-color: #00000000;
+    color: #ffbf00;
+  }
+
+  /* Dark mode */
+  .eklavya-link.dark {
+    background-color: #00000002; /* slightly greyish black */
+    color: #ffbf00;
   }
 }
 

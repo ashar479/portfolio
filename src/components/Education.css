@@ -84,21 +84,27 @@
     padding-top: 5%;
   }
 
+  .resume-button button {
+    font-size: 0.7rem;
+    padding: 0.7rem;
+  }
+
   .education h2 {
     font-size: 1rem; /* Adjust heading font size for smaller screens */
   }
 
   .education h3 {
-    font-size: 0.7rem; /* Adjust heading font size for smaller screens */
+    font-size: 0.8rem; /* Adjust heading font size for smaller screens */
   }
 
   .education p {
-    font-size: 0.5rem; /* Adjust paragraph font size for smaller screens */
+    font-size: 0.7rem; /* Adjust paragraph font size for smaller screens */
     font-weight: lighter;
   }
 
   .education ul li {
-    font-size: 0.5rem; /* Adjust paragraph font size for smaller screens */
+    font-size: 0.7rem; /* Adjust paragraph font size for smaller screens */
     font-weight: lighter;
+    margin-left: 0.7rem;
   }
 }
