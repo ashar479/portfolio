@@ -77,7 +77,7 @@
 @media only screen and (max-width: 800px) {
   .research-publications h2 {
     font-size: 1rem;
-    margin-bottom: 14px;
+    margin-bottom: 0rem;
   }
 
   .research-publications h3 {
@@ -87,6 +87,7 @@
   .research-publications p,
   .research-publications li {
     font-size: 0.7rem;
+    margin-bottom: 0rem;
   }
 
   .research-publications .publication-entry {

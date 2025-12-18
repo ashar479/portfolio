@@ -106,7 +106,7 @@ const App = () => {
         className={`pointer-events-none fixed inset-0 -z-10
     ${
       isDarkMode
-        ? 'bg-neutral-950 bg-[radial-gradient(ellipse_800px_350px_at_50%_1%,#707070,transparent)]'
+        ? 'bg-zinc-900 bg-[radial-gradient(ellipse_1000px_300px_at_50%_10%,#707070,transparent)]'
         : 'bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]'
     }`}
       >

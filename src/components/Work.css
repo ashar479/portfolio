@@ -50,11 +50,38 @@
 }
 
 .timeline-content {
+  position: relative;
   background: #ffffff;
   border: 1px solid #ddd;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.timeline-content::before,
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle farthest-side,
+    rgba(255, 0, 182, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
+}
+
+.timeline-content::before {
+  top: -10%;
+  left: -20%;
+}
+
+.timeline-content::after {
+  top: -10%;
+  right: -20%;
 }
 
 .timeline-content h3 {
@@ -112,6 +139,7 @@
 @media only screen and (max-width: 800px) {
   .work h2 {
     font-size: 1rem;
+    margin-bottom: -1rem;
   }
 
   .timeline-content {
@@ -128,5 +156,7 @@
 
   .timeline-content li {
     font-size: 0.7rem;
+    text-align: justify;
+    margin-left: -0.5rem;
   }
 }

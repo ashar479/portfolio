@@ -159,10 +159,12 @@
 
   .projects h2 {
     font-size: 1rem;
+    margin-bottom: -0.2rem;
   }
 
   .projects p {
     font-size: 0.7rem;
+    margin-top: -2.5rem;
   }
 
   .projects a {

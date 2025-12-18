@@ -32,6 +32,7 @@
   display: flex;
   margin-top: 100px; /* desktop top spacing */
   padding-right: 5%;
+  margin-bottom: 15rem;
 }
 
 .home-info {
@@ -248,8 +249,7 @@
 /* ---------- Mobile (≤800px) ---------- */
 @media only screen and (max-width: 800px) {
   .home {
-    margin-bottom: 10%;
-    margin-top: 15%;
+    margin-top: 25%;
   }
   
   .home.light-mode {
