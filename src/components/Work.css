@@ -162,6 +162,24 @@
     padding: 0.7rem;
   }
 
+  /* Smaller + repositioned glow circles */
+  .timeline-content::before,
+  .timeline-content::after {
+    width: 280px;
+    height: 240px;
+  }
+
+  .timeline-content::before {
+    top: -10%;
+    left: -40%;
+  }
+
+  .timeline-content::after {
+    bottom: -20%;
+    right: -35%;
+    top: auto;
+  }
+
   .timeline-content h3 {
     font-size: 0.7rem;
   }

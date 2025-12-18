@@ -136,4 +136,22 @@
     padding: 0.7rem;
     border-radius: 10px;
   }
+
+  /* Smaller + repositioned glow circles */
+  .research-publications .publication-entry::before,
+  .research-publications .publication-entry::after {
+    width: 240px;
+    height: 200px;
+  }
+
+  .research-publications .publication-entry::before {
+    top: -10%;
+    left: -45%;
+  }
+
+  .research-publications .publication-entry::after {
+    bottom: -25%;
+    right: -40%;
+    top: auto;
+  }
 }
