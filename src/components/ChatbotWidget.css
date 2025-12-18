@@ -91,6 +91,56 @@
   margin-bottom: 10pt;
 }
 
+.chatbot-title.alert {
+  display: inline-block;
+  margin-top: 1%;
+  padding: 2%;
+  border-radius: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 214, 102, 0.95),
+    rgba(255, 154, 60, 0.95),
+    rgba(255, 214, 102, 0.95)
+  );
+  background-size: 220% 220%;
+  color: #1a1a1a;
+
+  border: 1px solid rgba(255, 154, 60, 0.65);
+  box-shadow: 0 10px 26px rgba(255, 154, 60, 0.22),
+    0 2px 0 rgba(255, 255, 255, 0.35) inset;
+
+  animation: alertGlow 2.2s ease-in-out infinite;
+}
+
+.chatbot-title.alert::before {
+  content: '⏳ Heads up:';
+  margin-right: 8px;
+}
+
+@keyframes alertGlow {
+  0% {
+    background-position: 0% 50%;
+    transform: translateY(0);
+  }
+  50% {
+    background-position: 100% 50%;
+    transform: translateY(0);
+  }
+  100% {
+    background-position: 0% 50%;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chatbot-title.alert {
+    animation: none;
+  }
+}
+
 .chatbot-title-p {
   font-size: 11pt;
   font-weight: 100;
@@ -250,9 +300,11 @@
   flex: 1;
   padding: 10px;
   border: 1px solid #ddd;
+  background-color: #ffffff;
   border-radius: 8px;
   outline: none;
   font-size: 16px;
+  color: #000000;
 }
 
 .chatbot-submit-button {

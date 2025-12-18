@@ -152,6 +152,11 @@ const ChatbotWidget = () => {
               ))}
               {messages.length === 0 && (
                 <div>
+                  <p className="chatbot-title alert">
+                    Quick note: this chatbot is hosted on Render’s free tier,
+                    so the first message may take up to ~1 minute to wake up.
+                    After that, replies are fast.
+                  </p>
                   <h1 className="chatbot-title">
                     🌟 Hi there! I’m KnowBee — your cheerful AI guide to Ansh
                     Sharma! I’m here to share insights about his background,
