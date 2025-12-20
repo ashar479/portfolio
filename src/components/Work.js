@@ -7,6 +7,16 @@ import SER450 from './docs/SER450.pdf';
 const Work = ({ id, isDarkMode }) => {
   const workExperience = [
     {
+      title: 'Full Stack AWS Developer',
+      organization: 'MindSpark, Remote',
+      duration: 'Dec 2025 – Present',
+      highlights: [
+        'Built and maintained full-stack features using React, AWS Lambda, and PostgreSQL (Aurora v2) to support scalable, cloud-based application workflows',
+        'Developed backend logic and integrations using Google Apps Script, enabling automated data flows between frontend components and AWS services',
+        'Implemented REST APIs using Node.js and Express to support frontend features and database operations',
+      ],
+    },
+    {
       title: 'Software Engineer / QA Intern',
       organization: 'EyCrowd, San Francisco, CA',
       duration: 'June 2025 – November 2025',
