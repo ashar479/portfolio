@@ -7,10 +7,16 @@ import NSTCard from './projects_images/NST/NST_Card.webp';
 import AndroidCard from './projects_images/Android/Android_Card.webp';
 import ScrumCard from './projects_images/Scrum/Acrum_Card.webp';
 import AlignedCard from './projects_images/Aligned/AlignedCard.webp';
+import CalTrackCard from './projects_images/Caltrack.webp';
 import CompilerCard from './projects_images/Compiler/CompilerCard.webp';
 
 const Projects = ({ id, isDarkMode }) => {
   const projectData = [
+    {
+      title: 'CalTrack',
+      imagePath: CalTrackCard,
+      moreInfoLink: 'https://www.thecaltrackapp.com/',
+    },
     {
       title: 'Aligned Rewards - AI + KANBAN',
       imagePath: AlignedCard,
